@@ -24,8 +24,7 @@ const common = merge([{
             },
         entry: {
             'index': PATHS.source + '/index.js',
-            'colors-and-types': PATHS.source + '/pages/colors-and-types/colors-and-types.js',
-            'form-elements': PATHS.source + '/pages/form-elements/form-elements.js',
+            'colors-and-types': PATHS.source + '/pages/colors-and-types/colors-and-types.js'
         },
 
         output: {
