@@ -1,2 +1,157 @@
 @import '../template/template';
 @import '../../components/logo/logo';
+@import "../template/fonts-collector";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1em;
+}
+
+
+.free-space {
+  content: '';
+}
+
+.elements-color-and-type {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+
+  &__logo {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  &__column {
+    flex-basis: 320px;
+  }
+
+  &__column:first-child {
+    padding-top: 8px;
+    padding-left: 11.8%;
+  }
+
+  &__column:last-child {
+    padding-right: 2.35%;
+    padding-bottom: 5%;
+  }
+
+  &__block-color-wrap {
+    padding-bottom: 13px;
+  }
+}
+
+.elements-color-and-type__block-color-wrap .block-color {
+  position: relative;
+  padding-top: 7px;
+  padding-left: 110px;
+  height: 70px;
+  color: $DarkShade100;
+
+
+
+  &__example {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    line-height: 29px;
+    font-size: 19px;
+    letter-spacing: 0px;
+  }
+
+  &__hex-color {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    line-height: 29px;
+    font-size: 19px;
+  }
+}
+
+.elements-color-and-type__column .block-types {
+  display: flex;
+  justify-content: space-between;
+  width: 403px;
+  text-align: justify;
+  padding-top: 8px;
+
+  &:first-child {
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 43px;
+    padding-top: 3;
+  }
+
+  &:nth-child(2) {
+    font-size: 19px;
+    line-height: 23px;
+    text-align: left;
+    padding-bottom: 43px;
+  }
+
+  &:nth-child(3) {
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 39px;
+  }
+
+  &:last-child {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  &__title {
+    width: 37px;
+    text-align: center;
+    color: $DarkShade25;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 5px;
+
+  }
+
+  &__description {
+    width: 336px;
+  }
+
+}
+
+.block-types>p:last-of-type {
+  box-sizing: border-box;
+  padding-right: 20px;
+}

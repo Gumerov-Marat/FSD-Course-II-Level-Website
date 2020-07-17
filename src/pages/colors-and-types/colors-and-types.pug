@@ -21,3 +21,68 @@ block main
     .elements-color-and-type__logo
       +logo({mods: 'gray'})
   +free-space({height: '60px'})
+
+  section(class="" +elementsColorAndType )
+    .elements-color-and-type__column
+      +color-side({
+        colorStrings: [
+          {
+            title: 'Dark Shade 100%',
+            color: 'rgba(31,32,65,1)'
+          },
+          {
+            title: 'Dark Shade 75%',
+            color: 'rgba(31,32,65,.75)'
+          },
+          {
+            title: 'Dark Shade 50%',
+            color: 'rgba(31,32,65,.5)'
+          },
+          {
+            title: 'Dark Shade 25%',
+            color: 'rgba(31,32,65,.25)'
+          },
+          {
+            title: 'Dark Shade 5%',
+            color: 'rgba(31,32,65,0.05)'
+          },
+          {
+            title: 'Purple',
+            color: '#BC9CFF'
+          },
+          {
+            title: 'Purple',
+            color: '#BC9CFF'
+          },
+          {
+            title: 'Green',
+            color: '#6FCF97'
+          }
+        ]
+        })
+
+    .elements-color-and-type__column
+      +type-side({
+        typeStrings: [
+          {
+          tagName: 'h1',
+          tagTitle: 'H1',
+          description: 'This one is the sub-section or widget title'
+          },
+          {
+          tagName: 'h2',
+          tagTitle: 'H2',
+          description: 'Next one is the item title inside widgets'
+          },
+          {
+          tagName: 'h3',
+          tagTitle: 'H3',
+          description: 'This is a label or CTA text'
+          },
+          {
+          tagName: 'p',
+          tagTitle: 'Body',
+          description: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.'
+          }
+        ]
+      })
