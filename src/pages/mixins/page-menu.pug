@@ -1,0 +1,9 @@
+mixin page-menu(props = {})
+
+  - const {items} = props
+
+  ul.menu-page
+  each listItem in items
+    - const {linkPage, namePage} = listItem
+    li.menu-page__item
+      a(href = linkPage)= namePage
