@@ -24,8 +24,10 @@ const common = merge([{
             },
         entry: {
             'index': PATHS.source + '/index.js',
-            'colors-and-types': PATHS.source + '/pages/colors-and-types/colors-and-types.js'
+            'colors-and-types': PATHS.source + '/pages/colors-and-types/colors-and-types.js',
+            'form-elements': PATHS.source + '/pages/form-elements/form-elements.js',
         },
+
 
         output: {
             path: PATHS.build,
@@ -41,6 +43,11 @@ const common = merge([{
                 filename: 'colors-and-types.html',
                 template: PATHS.source + '/pages/colors-and-types/colors-and-types.pug'
             }),
+            new HtmlWebpackPlugin({
+                filename: 'form-elements.html',
+                template: PATHS.source + '/pages/form-elements/form-elements.pug'
+            }),
+
 
             // Это важный блок и он тут нужен. Ввверху импорт плагина
             new MiniCssExtractPlugin({
