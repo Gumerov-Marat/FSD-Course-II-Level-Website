@@ -11,3 +11,29 @@ block meta
 block title
   | Form Elements
 
+block main
+  - var elementsFormElements = 'elements-form-elements';
+  section(class="" +elementsFormElements )
+    .elements-form-elements__logo
+      +logo({mods: 'gray'})
+  +free-space({height: '60px'})
+
+
+  section(class="" +elementsFormElements )
+    //- Левый блок
+    .elements-form-elements__column
+
+    //-средний блок
+    .elements-form-elements__column
+
+    //- Правый блок
+    .elements-form-elements__column
+
+  +free-space({height: '79px'})
+  section(class="" +elementsFormElements )
+
+  +free-space({height: '79px'})
+  section(class="" +elementsFormElements )
+
+  +free-space({height: '190px'})
+  section.elements
