@@ -1,1 +1,41 @@
 @import '../template/template';
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+.free-space {
+  content: '';
+}
+
+.elements-form-elements {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+  //БОРДЕР
+  border: 1px solid rgb(218, 157, 25);
+
+  &__logo {
+    padding-top: 35px;
+    padding-left: 23px;
+  }
+
+  &__column {
+    flex-basis: 320px;
+    border: 2px solid rgb(36, 35, 128);
+  }
+
+  &__column:first-child {
+    padding-left: 9.3%;
+  }
+
+
+}

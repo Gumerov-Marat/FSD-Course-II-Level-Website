@@ -1,0 +1,11 @@
+mixin block-lib-self-title(props={})
+
+  //- Микс задает место для элементов с собственным заголовком.
+  //- Получает данные:
+  //- title       string  Заголовок - название элемента
+  //- mods        string  Описание модификатора
+  //- width       string  Ширина в виде 'XXpix'
+
+  .block-lib(class= props.type || '',
+  style="width:"+props.width)
+    block

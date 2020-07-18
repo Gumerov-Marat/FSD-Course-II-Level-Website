@@ -1,0 +1,14 @@
+mixin block-lib(props={})
+
+  //- Микс задает место для элемента на странице, добавляет подписи, задает размер
+  //- Получает данные:
+  //- title       string  Заголовок - название элемента
+  //- mods        string  Описание модификатора
+  //- width       string  Ширина в виде 'XXpix'
+
+  .block-lib(class= props.type || '',style="width:"+props.width)
+    .block-lib__description-row
+      h3.block-lib__title= props.title
+      .block-lib__mods= props.mods
+    .block-lib__block-row
+      block
