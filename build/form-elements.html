@@ -11,5 +11,86 @@
     </title>
   <link href="index.css" rel="stylesheet"></head>
   <body>
+    <section class="elements-form-elements">
+      <div class="elements-form-elements__logo">
+        <div class="logo  logo_gray">
+          <object class="logo__svg" data="./images/logo-gray.svg" type="image/svg+xml"></object>
+        </div>
+      </div>
+    </section>
+    <div class="free-space" style="height:60px;"></div>
+    <section class="elements-form-elements">
+      <div class="elements-form-elements__column">
+        <div class="block-lib" style="width:320px">
+          <div class="block-lib__description-row">
+            <h3 class="block-lib__title">TEXT FIELD</h3>
+            <div class="block-lib__mods">DEFAULT</div>
+          </div>
+          <div class="block-lib__block-row">
+            <input class="text-field" placeholder="Email" type="text" autocomplete="off">
+          </div>
+        </div>
+        <div class="block-lib" style="width:320px">
+          <div class="block-lib__description-row">
+            <h3 class="block-lib__title">TEXT FIELD</h3>
+            <div class="block-lib__mods">HOVER / FOCUS</div>
+          </div>
+          <div class="block-lib__block-row">
+            <input class="text-field  text-field_focused" placeholder="This is pretty awesome" type="text" autocomplete="off">
+          </div>
+        </div>
+        <div class="block-lib" style="width:320px">
+          <div class="block-lib__description-row">
+            <h3 class="block-lib__title">DROPDOWN</h3>
+            <div class="block-lib__mods">DEFAULT</div>
+          </div>
+          <div class="block-lib__block-row">
+            <div class="dropdown dropdown-visitors">
+              <p class="dropdown__selection">Сколько гостей</p><span class="dropdown__marker"></span>
+              <div class="dropdown__menu" data-separate="гость,гостя,гостей">
+                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="">
+                  <p class="dropdown__line-title">ВЗРОСЛЫЕ</p>
+                  <div class="dropdown__controls">
+                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
+                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
+                  </div>
+                </div>
+                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="">
+                  <p class="dropdown__line-title">ДЕТИ</p>
+                  <div class="dropdown__controls">
+                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
+                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
+                  </div>
+                </div>
+                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="младенец,младенца,младенцев">
+                  <p class="dropdown__line-title">МЛАДЕНЦЫ</p>
+                  <div class="dropdown__controls">
+                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
+                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
+                  </div>
+                </div>
+                <div class="dropdown__menu-row dropdown__menu-row_buttons">
+                  <div class="dropdown__button-clear">
+                    <button class="buttons  buttons_link buttons_dark" type="button">ОЧИСТИТЬ</button>
+                  </div>
+                  <div class="dropdown__separator"></div>
+                  <div class="dropdown__button-submit">
+                    <button class="buttons  buttons_link" type="button">ПРИМЕНИТЬ</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="elements-form-elements__column"></div>
+      <div class="elements-form-elements__column"></div>
+    </section>
+    <div class="free-space" style="height:79px;"></div>
+    <section class="elements-form-elements"></section>
+    <div class="free-space" style="height:79px;"></div>
+    <section class="elements-form-elements"></section>
+    <div class="free-space" style="height:190px;"></div>
+    <section class="elements"></section>
   <script src="js/index.js"></script><script src="js/colors-and-types.js"></script><script src="js/form-elements.js"></script></body>
 </html>

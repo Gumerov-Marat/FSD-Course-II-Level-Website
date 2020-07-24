@@ -1,0 +1,43 @@
+.text-field {
+  box-sizing: border-box;
+  outline: none;
+  border: 0.0625rem solid rgba(31, 32, 65, 0.25);
+  border-radius: 0.25rem;
+  padding: 0;
+  padding-left: 0.9375rem;
+  width: 100%;
+  height: 44px;
+  color: $DarkShade75;
+  font-family: Montserrat;
+  font-size: 0.875rem;
+  font-weight: normal;
+  font-style: normal;
+
+  &:hover {
+    @extend %hover-focus;
+  }
+
+  &_focused {
+    @extend %hover-focus;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.5px $Purple;
+  }
+
+  &::placeholder {
+    color: $DarkShade25;
+  }
+
+  &_focused::placeholder {
+    color: $DarkShade75;
+  }
+
+  &:hover::placeholder {
+    color: $DarkShade75;
+  }
+}
+
+%hover-focus {
+  border: 0.0625rem solid $DarkShade50;
+}

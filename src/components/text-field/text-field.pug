@@ -1,0 +1,35 @@
+mixin text-field(props = {})
+
+	//- Получает объект props с ключами:
+	//- mods					string		модификаторы через запятую
+	//- placeholder		stgring		Placeholder
+
+		Пример вызова
+		+text-field({placeholder: 'Email'})
+
+	-
+		const {mods, placeholder, moduleID, readonly} = props
+		var attributes = {}
+		if (moduleID !== 'undefined' && moduleID) {
+			attributes.id = moduleID
+		}
+		let allMods = ''
+		if (typeof(mods) !== 'undefined' && mods) {
+			let modList = mods.split(',')
+			for (let i=0; i < modList.length; i++) {
+				allMods = allMods + ' text-field_' + modList[i].trim()
+			}
+		}
+
+	input.text-field(
+		class = allMods,
+		placeholder = placeholder || '',
+		type= 'text',
+		autocomplete= "off",
+		)&attributes(attributes)
+
+
+
+
+
+
