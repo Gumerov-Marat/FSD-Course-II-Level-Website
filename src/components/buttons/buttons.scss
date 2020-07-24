@@ -1,0 +1,106 @@
+%button-hover {
+  transition-duration: .3s;
+  opacity: .5;
+}
+
+.buttons {
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+
+  &:hover {
+    @extend %button-hover;
+  }
+
+  &_hover {
+    @extend %button-hover;
+  }
+
+  // Модификатор full - градиент на кнопке
+  &_full {
+    border: none;
+    border-radius: 1.375rem;
+    background: $PrimaryGradient;
+    width: 100%;
+    height: 2.75rem;
+    color: white;
+    // padding-left: 1.25rem;
+    // padding-right: 1.25rem;
+  }
+
+  // Модификатор _border
+  &_border {
+    border: solid 0.125rem transparent;
+    border-radius: 1.375rem;
+    box-shadow: 2px 1000px 1px #fff inset;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), $PrimaryGradient;
+    background-clip: content-box, border-box;
+    background-origin: border-box;
+    width: 100%;
+    height: 2.75rem;
+    color: $Purple;
+    // padding-left: 1.125rem;
+    // padding-right: 1.125rem;
+  }
+
+  // Модификатор _link
+  &_link {
+    display: inline-block;
+    margin: 0;
+    border: none;
+    border: none;
+    background: transparent;
+    padding: 0;
+    color: #BC9CFF;
+  }
+
+  &_link:focus {
+    box-shadow: none;
+  }
+
+
+  // Модификатор _big
+  &_big {
+    width: 20rem;
+  }
+
+  // Модификатор _arrow
+  &_arrow {
+    position: relative;
+  }
+
+  // Модификатор arrow - стрелка в правой части кнопки
+  &_arrow::after {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+    content: 'arrow_forward';
+    //@extend %MaterialIcon
+  }
+
+  // Модификатор dark - надпись в кнопке серым цветом
+  &_dark {
+    color: $DarkShade50;
+  }
+
+  // Модификатор free-height - высота кнопки занимает 100% обертки
+  &_free-height {
+    height: 100%;
+  }
+
+  // Модификатор paddin20 - размер кнопки от внутренней надписи + 1.25rem по краям
+  &_padding20 {
+    width: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+
+
+
+

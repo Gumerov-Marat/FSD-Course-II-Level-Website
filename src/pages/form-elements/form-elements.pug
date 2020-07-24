@@ -22,6 +22,29 @@ block main
   section(class="" +elementsFormElements )
     //- Левый блок
     .elements-form-elements__column
+      +block-lib({title: 'TEXT FIELD', mods:'DEFAULT', width: '320px'})
+        +text-field({placeholder: 'Email'})
+
+      +block-lib({title: 'TEXT FIELD', mods:'HOVER / FOCUS', width: '320px'})
+        +text-field({mods: 'focused', placeholder: 'This is pretty awesome'})
+
+      +block-lib({title: 'DROPDOWN', mods: 'DEFAULT', width: '320px'})
+        +dropdown({
+          moduleClass: 'dropdown-visitors',
+          isBtnClear: true,
+          isBtnSubmit: true,
+          dropStrings: [
+            {lineTitle: 'ВЗРОСЛЫЕ', maxCount: '5'},
+            {lineTitle: 'ДЕТИ', maxCount: '5'},
+            {lineTitle: 'МЛАДЕНЦЫ', maxCount: '5',
+            isCountSeparate: true,
+            namingForCount: 'младенец,младенца,младенцев'}
+          ],
+          namingForAll: 'гость,гостя,гостей',
+          namingForEmpty: 'Сколько гостей'
+          })
+
+
 
     //-средний блок
     .elements-form-elements__column

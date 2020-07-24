@@ -1,4 +1,8 @@
 @import '../template/template';
+@import '../../components/logo/logo';
+@import '../../components/text-field/text-field';
+@import '../../components/dropdown/dropdown';
+@import '../../components/buttons/buttons';
 
 
 * {
@@ -34,8 +38,37 @@ body {
   }
 
   &__column:first-child {
-    padding-left: 9.3%;
+    //padding-left: 9.3%;
+  }
+}
+
+.block-lib {
+  border: 1px solid rgb(69, 146, 54);
+  padding-bottom: 21px;
+
+  &__description-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
+  &__block-row {
+    padding-top: 5px;
+  }
+
+  &__title {
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  &__mods {
+    text-align: right;
+    line-height: 15px;
+    font-size: 12px;
+  }
 
 }

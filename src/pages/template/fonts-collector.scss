@@ -11,6 +11,9 @@
   }
 }
 
+//@include font-face("Material Icons", "../fonts/MaterialIcons-Regular");
+
+
 @include font-face("Montserrat", "./assets/fonts/Montserrat-Regular");
 @include font-face("Montserrat", "./assets/fonts/Montserrat-Bold", bold);
 
@@ -19,3 +22,5 @@
 
 @include font-face("Quicksand", "./assets/fonts/Quicksand-Bold", bold);
 @include font-face("Quicksand", "./assets/fonts/Quicksand-Regular");
+
+
