@@ -21,7 +21,7 @@ block main
 
   section(class="" +elementsFormElements )
     //- Левый блок
-    
+
     .elements-form-elements__column
       +block-lib({title: 'TEXT FIELD', mods:'DEFAULT', width: '320px'})
         +text-field({placeholder: 'Email'})
@@ -70,9 +70,29 @@ block main
         +filter-date-dropdown({placeholder: '19 авг - 23 авг'})
 
 
+      +free-space({height: '20px'})
+      +block-lib({title: 'SUBSCRIPTION TEXT FIELD', width: '266px'})
+        +subscription-text-field({placeholder: 'Email'})
+
 
     //-средний блок
     .elements-form-elements__column
+      +block-lib-self-title({width: '222px'})
+        +checkbox-buttons({
+            listTitle: 'CHECKBOX BUTTONS',
+            moduleClass: 'check-list-buttons',
+            dropStrings: [
+              {dataName: 'checkbox-smoking',
+              labelTitle: 'Можно курить'},
+              {dataName: 'checkbox-pets',
+              labelTitle: 'Можно с питомцами',
+              checked: true},
+              {dataName: 'checkbox-guests',
+              labelTitle: 'Можно пригласить гостей (до 10 человек)',
+              checked: true},
+              ]
+            })
+
 
     //- Правый блок
     .elements-form-elements__column

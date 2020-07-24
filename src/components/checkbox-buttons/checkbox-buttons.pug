@@ -1,0 +1,59 @@
+include ../field-checkbox/field-checkbox.pug
+
+mixin checkbox-buttons(props={})
+
+  //- checkbox-buttons  раскрытый список чекбоксов
+  //- Данные для JS храняться в атрибутах Data
+  //-
+  //- Принимает объект props с ключами:
+  //- moduleClass             string      имя класса списка
+  //- mods                    string
+  //- listTitle               string      название спсика
+  //- dropStrings             array
+  //-     *moduleClass        string      имя класса для чекбокса
+  //-     *labelTitle         string      текст строки
+  //-     mods                string      Модификация: disabled
+  //-     checked             boolean     Установка в состояние checked
+
+    Пример вызова:
+    +checkbox-buttons({
+      moduleClass: 'TestCheckList',
+      lineTitle: 'Test Expanded Checkbox List',
+      drpString: [
+        {
+          moduleClass: 'testCheckColor',
+          labelTitle: 'Я выбираю цвет',
+          mods: 'redColor',
+          checked: true
+        },
+        {
+          moduleClass: 'testCheckBold',
+          labelTitle: 'Установить жирый шрифт',
+        }
+      ]
+      })
+
+  -
+    const {moduleClass, mods, listTitle, dropStrings} = props
+    let allMods = ''
+    if (typeof(mods) !== 'undefined' && mods) {
+    let modList = mods.split(',')
+    for (let i=0; i < modList.length; i++) {
+      allMods = allMods + ' checkbox-buttons_' + modList[i].trim()
+      }
+    }
+
+  .checkbox-buttons(class = moduleClass + allMods)
+    .checkbox-buttons__title-wrapper
+      p.checkbox-buttons__title= listTitle || ''
+
+    .checkbox-buttons__menu
+      each rowString in dropStrings
+        - const {moduleClass, labelTitle, dataName, mods, checked} = rowString
+        .checkbox-buttons__menu-row
+          +field-checkbox({
+            labelTitle: labelTitle || '',
+            dataName: dataName || '',
+            mods: mods || '',
+            checked: checked || '',
+          })

@@ -98,6 +98,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/components/masked-text-field/masked-text-field.js":
+/*!***************************************************************!*\
+  !*** ./src/components/masked-text-field/masked-text-field.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./src/components/masked-text-field/masked-text-field.js?");
+
+/***/ }),
+
 /***/ "./src/pages/form-elements/form-elements.js":
 /*!**************************************************!*\
   !*** ./src/pages/form-elements/form-elements.js ***!
@@ -106,7 +117,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _form_elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form-elements */ \"./src/pages/form-elements/form-elements.js\");\n/* harmony import */ var _components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/dropdown/dropdown.js */ \"./src/components/dropdown/dropdown.js\");\n// Styles\r\n\r\n\r\n\r\n\r\n\r\n\r\nvar readyPage = (callback) => {\r\n  if (document.readyState != \"loading\") callback();\r\n  else document.addEventListener(\"DOMContentLoaded\", callback);\r\n}\r\n\r\n\r\nreadyPage(() => {\r\n  //const maskedTextDate = new MaskedTextField('date')\r\n\r\n  const demoDropDownVisitors = new _components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__[\"dropdown\"]('.dropdown-visitors');\r\n  const demoDropDownVisitorsWithoutClear = new _components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__[\"dropdown\"]('.dropdown-visitors-without-clear');\r\n  const demoDropDownVisitorsClear = new _components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__[\"dropdown\"]('.dropdown-visitors-clear');\r\n\r\n  const demoDropDownEnarenmentClose = new _components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__[\"dropdown\"]('.dropdown-envarenment-close');\r\n  const demoDropDownEnarenmentOpen = new _components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__[\"dropdown\"]('.dropdown-envarenment-open');\r\n});\r\n\r\n// изображения\r\n// import '../../modules/comment/img/avatar-free.png'\r\n// import './images/avatar.png'\r\n// import '../../modules/logo/images/logo.svg'\r\n// import '../../modules/logo/images/logo-gray.svg'\r\n// import '../../modules/logo/images/logo-mobile.svg'\r\n\r\n\r\n// собственные модули\r\n// import '../../modules/field-checkbox/field-checkbox'\r\n\n\n//# sourceURL=webpack:///./src/pages/form-elements/form-elements.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _form_elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form-elements */ \"./src/pages/form-elements/form-elements.js\");\n/* harmony import */ var _components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/dropdown/dropdown.js */ \"./src/components/dropdown/dropdown.js\");\n/* harmony import */ var _components_masked_text_field_masked_text_field__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/masked-text-field/masked-text-field */ \"./src/components/masked-text-field/masked-text-field.js\");\n/* harmony import */ var _components_masked_text_field_masked_text_field__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_masked_text_field_masked_text_field__WEBPACK_IMPORTED_MODULE_2__);\n// Styles\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nvar readyPage = (callback) => {\r\n  if (document.readyState != \"loading\") callback();\r\n  else document.addEventListener(\"DOMContentLoaded\", callback);\r\n}\r\n\r\n\r\nreadyPage(() => {\r\n  //const maskedTextDate = new MaskedTextField('date')\r\n\r\n  const demoDropDownVisitors = new _components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__[\"dropdown\"]('.dropdown-visitors');\r\n  const demoDropDownVisitorsWithoutClear = new _components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__[\"dropdown\"]('.dropdown-visitors-without-clear');\r\n  const demoDropDownVisitorsClear = new _components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__[\"dropdown\"]('.dropdown-visitors-clear');\r\n\r\n  const demoDropDownEnarenmentClose = new _components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__[\"dropdown\"]('.dropdown-envarenment-close');\r\n  const demoDropDownEnarenmentOpen = new _components_dropdown_dropdown_js__WEBPACK_IMPORTED_MODULE_1__[\"dropdown\"]('.dropdown-envarenment-open');\r\n});\r\n\r\n// изображения\r\n// import '../../modules/comment/img/avatar-free.png'\r\n// import './images/avatar.png'\r\n// import '../../modules/logo/images/logo.svg'\r\n// import '../../modules/logo/images/logo-gray.svg'\r\n// import '../../modules/logo/images/logo-mobile.svg'\r\n\r\n\r\n// собственные модули\r\n// import '../../modules/field-checkbox/field-checkbox'\r\n\n\n//# sourceURL=webpack:///./src/pages/form-elements/form-elements.js?");
 
 /***/ })
 

@@ -1,0 +1,33 @@
+.checkbox-buttons {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+
+  &__title-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+  }
+
+  &__menu {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    line-height: 0.9375rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  &__menu-row {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+  }
+}

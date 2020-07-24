@@ -1,0 +1,27 @@
+include ../text-field/text-field.pug
+
+mixin subscription-text-field(props = {})
+
+  //- Получает объект props с ключами:
+  //- mods			    string		Модификаторы через запятую
+  //- placeholder		stgring		Placeholder
+    Пример вызова
+    +subscription-text-field({placeholder: 'Email'})
+
+  -
+    const {mods, placeholder} = props
+    let allMods = ''
+    if (typeof(mods) !== 'undefined' && mods) {
+      let modList = mods.split(',')
+      for (let i=0; i < modList.length; i++) {
+        allMods = allMods + ' subscription-text-field_' + modList[i].trim()
+      }
+    }
+
+
+  .subscription-text-field(class= allMods)
+    +text-field({
+      placeholder: placeholder || '',
+      mods: mods || ''
+    })
+    span.subscription-text-field__marker arrow_forward
