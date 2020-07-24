@@ -46,7 +46,7 @@
           </div>
           <div class="block-lib__block-row">
             <div class="dropdown dropdown-visitors">
-              <p class="dropdown__selection">Сколько гостей</p><span class="dropdown__marker"></span>
+              <p class="dropdown__selection">Сколько гостей</p><span class="dropdown__marker">expand_more</span>
               <div class="dropdown__menu" data-separate="гость,гостя,гостей">
                 <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="">
                   <p class="dropdown__line-title">ВЗРОСЛЫЕ</p>
@@ -82,8 +82,102 @@
             </div>
           </div>
         </div>
+        <div class="block-lib" style="width:320px">
+          <div class="block-lib__description-row">
+            <h3 class="block-lib__title">MASKED-TEXT-FIELD</h3>
+            <div class="block-lib__mods">DEFAULT</div>
+          </div>
+          <div class="block-lib__block-row">
+            <input class="masked-text-field" placeholder="ДД.ММ.ГГГ" type="text" name="date" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}">
+          </div>
+        </div>
+        <div class="block-lib" style="width:320px">
+          <div class="block-lib__description-row">
+            <h3 class="block-lib__title"></h3>
+            <div class="block-lib__mods"></div>
+          </div>
+          <div class="block-lib__block-row">
+            <div class="free-space" style="height:14px;"></div>
+            <div class="elements__container">
+              <div class="elements__half-column">
+                <div class="block-lib" style="width:150px">
+                  <div class="block-lib__description-row">
+                    <h3 class="block-lib__title">DATE DROPDOWN</h3>
+                    <div class="block-lib__mods"></div>
+                  </div>
+                  <div class="block-lib__block-row">
+                    <div class="date-dropdown">
+                      <input class="text-field" placeholder="ДД.ММ.ГГГГ" type="text" autocomplete="off"><span class="date-dropdown__marker">expand_more</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="elements__half-column">
+                <div class="block-lib" style="width:150px">
+                  <div class="block-lib__description-row">
+                    <h3 class="block-lib__title">DATE DROPDOWN</h3>
+                    <div class="block-lib__mods"></div>
+                  </div>
+                  <div class="block-lib__block-row">
+                    <div class="date-dropdown">
+                      <input class="text-field" placeholder="19.08.2019" type="text" autocomplete="off"><span class="date-dropdown__marker">expand_more</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block-lib" style="width:266px">
+          <div class="block-lib__description-row">
+            <h3 class="block-lib__title">filter date dropdown</h3>
+            <div class="block-lib__mods"></div>
+          </div>
+          <div class="block-lib__block-row">
+            <div class="filter-date-dropdown">
+              <input class="text-field" placeholder="19 авг - 23 авг" type="text" autocomplete="off"><span class="filter-date-dropdown__marker">expand_more</span>
+            </div>
+          </div>
+        </div>
+        <div class="free-space" style="height:20px;"></div>
+        <div class="block-lib" style="width:266px">
+          <div class="block-lib__description-row">
+            <h3 class="block-lib__title">SUBSCRIPTION TEXT FIELD</h3>
+            <div class="block-lib__mods"></div>
+          </div>
+          <div class="block-lib__block-row">
+            <div class="subscription-text-field">
+              <input class="text-field" placeholder="Email" type="text" autocomplete="off"><span class="subscription-text-field__marker">arrow_forward</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="elements-form-elements__column"></div>
+      <div class="elements-form-elements__column">
+        <div class="block-lib" style="width:222px">
+          <div class="checkbox-buttons check-list-buttons">
+            <div class="checkbox-buttons__title-wrapper">
+              <p class="checkbox-buttons__title">CHECKBOX BUTTONS</p>
+            </div>
+            <div class="checkbox-buttons__menu">
+              <div class="checkbox-buttons__menu-row">
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="checkbox-smoking"><span class="field-checkbox__box"></span>Можно курить
+                </label>
+              </div>
+              <div class="checkbox-buttons__menu-row">
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="checkbox-pets" checked><span class="field-checkbox__box"></span>Можно с питомцами
+                </label>
+              </div>
+              <div class="checkbox-buttons__menu-row">
+                <label class="field-checkbox">
+                  <input class="field-checkbox__input" type="checkbox" name="checkbox-guests" checked><span class="field-checkbox__box"></span>Можно пригласить гостей (до 10 человек)
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="elements-form-elements__column"></div>
     </section>
     <div class="free-space" style="height:79px;"></div>

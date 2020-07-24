@@ -1,0 +1,34 @@
+include ../masked-text-field/masked-text-field
+include ../text-field/text-field.pug
+
+mixin date-dropdown(props = {})
+
+  //- Получает параметры:
+  //- mods			string		Модификаторы через запятую
+  //- placeholder		stgring		Placeholder
+  //- attrs			object
+
+  -
+    const {mods, moduleID, placeholder} = props
+    let allMods = ''
+    if (typeof(mods) !== 'undefined' && mods) {
+      let modList = mods.split(',')
+      for (let i=0; i < modList.length; i++) {
+        allMods = allMods + ' date-dropdown_' + modList[i].trim()
+      }
+    }
+
+  .date-dropdown(class = allMods)
+    +text-field(
+      {
+      moduleID: moduleID,
+      type: 'text',
+      placeholder: placeholder || 'ДД.ММ.ГГГГ'
+    })
+    //- +masked-text-field({
+    //-   moduleID: moduleID,
+    //-   type: 'text',
+    //-   maskType: 'date',
+    //-   placeholder: placeholder || 'ДД.ММ.ГГГГ'
+    //- })
+    span.date-dropdown__marker expand_more

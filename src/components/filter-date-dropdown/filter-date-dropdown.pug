@@ -1,0 +1,28 @@
+include ../text-field/text-field
+
+mixin filter-date-dropdown(props = {})
+
+  //- Получает объект props с ключами:
+  //- mods			    string		Модификаторы через запятую
+  //- placeholder		stgring		Текст шаблона
+
+    Пример вызова
+    +filter-date-dropdown({placeholder: '19 авг - 23 авг'})
+
+  -
+    const {mods, placeholder, moduleID } = props
+    let allMods = ''
+    if (typeof(mods) !== 'undefined' && mods) {
+      let modList = mods.split(',')
+      for (let i=0; i < modList.length; i++) {
+        allMods = allMods + ' filter-date-dropdown_' + modList[i].trim()
+      }
+    }
+
+  .filter-date-dropdown
+    +text-field({
+      maskType: 'date',
+      moduleID: moduleID,
+      placeholder: placeholder || 'ДД месяц - ДД месяц'
+    })
+    span.filter-date-dropdown__marker expand_more

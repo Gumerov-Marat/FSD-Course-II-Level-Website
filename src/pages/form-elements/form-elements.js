@@ -3,6 +3,7 @@ import './form-elements';
 
 
 import { dropdown } from '../../components/dropdown/dropdown.js';
+import { MaskedTextField } from '../../components/masked-text-field/masked-text-field';
 
 
 var readyPage = (callback) => {

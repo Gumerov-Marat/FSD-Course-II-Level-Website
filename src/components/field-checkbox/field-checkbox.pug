@@ -1,0 +1,38 @@
+mixin field-checkbox(props={})
+
+  //- checkbox с label
+  //- Данные для JS храняться в атрибутах Data
+  //- 
+  //- Принимает параметры в props:
+  //- dataName                string      имя для name
+  //- mods                    string
+                        bold            жирный шрифт
+                        dark-shade75     цвет DarkShade75
+  //- labelTitle              string      
+  //- attrs:                  {object}
+  //-     name:               {string}
+  //- ...
+  //- 
+    Пример вызова
+    +field-checkbox({
+            labelTitle: 'my text',
+            dataName: 'my-name',
+            mods: 'red',
+            checked: true
+          })
+
+  -
+    const {mods, labelTitle, dataName, checked} = props
+    let allMods = ''
+    if (typeof(mods) !== 'undefined' && mods) {
+    let modList = mods.split(',')
+    for (let i=0; i < modList.length; i++) {
+      allMods = allMods + ' field-checkbox_' + modList[i].trim()
+      }
+    }
+
+  label.field-checkbox(class = allMods)
+    input.field-checkbox__input(type = "checkbox", name = dataName || 'check-box', checked = checked || false)
+    span.field-checkbox__box
+    |
+    = labelTitle || ''
