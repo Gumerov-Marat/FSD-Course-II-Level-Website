@@ -1,0 +1,52 @@
+.radio-buttons {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+
+  &__label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 1.875rem;
+    line-height: 1.5rem;
+    color: $DarkShade50;
+    font-size: 0.875rem;
+
+  }
+
+  &__input {
+    appearance: none;
+    margin: 0;
+  }
+
+  &__marker {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid $DarkShade25;
+    border-radius: 100%;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  &__input:checked+&__marker {
+    border: 1px solid $Purple;
+  }
+
+  &__input:checked+&__marker::after {
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    border-radius: 100%;
+    background: $PrimaryGradient;
+    width: 0.75rem;
+    height: 0.75rem;
+    content: '';
+  }
+
+  &__input:focus+&__marker {
+    box-shadow: 0 0 0 1px $Purple;
+  }
+}
