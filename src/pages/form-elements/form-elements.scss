@@ -112,3 +112,37 @@ body {
 .elements-form-elements:last-of-type .elements-form-elements__column:last-child {
   padding-left: 10%;
 }
+
+.block-lib {
+  padding-bottom: 21px;
+
+  &__description-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  &__block-row {
+    padding-top: 5px;
+  }
+
+  &__title {
+    // font-family: Montserrat;
+    // font-style: normal;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  &__mods {
+    // font-family: Montserrat;
+    // font-style: normal;
+    // font-weight: normal;
+    text-align: right;
+    line-height: 15px;
+    font-size: 12px;
+  }
+}

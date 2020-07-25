@@ -165,7 +165,61 @@ block main
         +range-slider({
           lineTitle: 'RANGE SLIDER',
         })
+      
 
+      +free-space({height: '12px'})
+      +block-lib({title: 'BUTTONS', width: '218px'})
+        +free-space({height: '12px'})
+        .elements__container
+          .elements__half-column
+            +buttons({
+              lineTitle: 'CLICK ME',
+              mods: 'full'
+              })
+          .elements__half-column
+            +buttons({
+              lineTitle: 'CLICK ME',
+              mods: 'full, hover'
+              })
+
+
+      +block-lib-self-title({title: '', width: '218px'})
+        +free-space({height: '8px'})
+        .elements__container
+          .elements__half-column
+            +buttons({
+              lineTitle: 'CLICK ME',
+              mods: 'border'
+              })
+          .elements__half-column
+            +buttons({
+              lineTitle: 'CLICK ME',
+              mods: 'border, hover'
+              })
+
+
+      +block-lib({title: '', width: '142px'})
+        .elements__container
+          .elements__half-column
+            +buttons({
+              lineTitle: 'CLICK ME',
+              mods: 'link'
+              })
+          .elements__half-column
+            +buttons({
+              lineTitle: 'CLICK ME',
+              mods: 'link, dark'
+              })
+
+
+      +block-lib({title: '', width: '320px'})
+        +buttons({
+          lineTitle: 'ПЕРЕЙТИ К ОПЛАТЕ',
+          mods: 'full, arrow, big'
+          })
+
+
+  //- Нижний ряд
   +free-space({height: '79px'})
   section(class="" +elementsFormElements )
 
