@@ -125,10 +125,46 @@ block main
           })
 
 
+      +free-space({height: '24px'})
+      +block-lib({title: 'LIKE BUTTON', width: '90px'})
+        +free-space({height: '10px'})
+        .elements__container
+          .elements__half-column
+            +like-button({
+              labelTitle: '2',
+              dataName: 'like-button-test'
+              })
+          .elements__half-column
+            +free-space({width: '7px'})
+            +like-button({
+              labelTitle: '12',
+              dataClass: 'like-button-test',
+              checked: true
+              })
+
+
+      +free-space({height: '20px'})
+      +block-lib({title: 'RATE-BUTTON', width: '260px'})
+        +free-space({height: '5px'})
+        .elements__container
+          .elements__half-column
+            +block-lib({width: '120px'})
+              +rate-button({
+                rate: '4'
+              })
+          .elements__half-column
+            +block-lib({width: '120px'})
+              +rate-button({
+                rate: '5'
+              })
 
 
     //- Правый блок
     .elements-form-elements__column
+      +block-lib-self-title({width: '266px'})
+        +range-slider({
+          lineTitle: 'RANGE SLIDER',
+        })
 
   +free-space({height: '79px'})
   section(class="" +elementsFormElements )

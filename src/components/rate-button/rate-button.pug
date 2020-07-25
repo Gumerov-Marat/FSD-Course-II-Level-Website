@@ -1,0 +1,24 @@
+mixin rate-button(props={})
+
+  //- Like button
+  //- Принимает параметры в props:
+  //- mods                    string      модификации
+  //- rate                    string      рейтинг
+  //- 
+
+
+  -
+    const {mods, rate} = props
+    let allMods = ''
+    if (typeof(mods) !== 'undefined' && mods) {
+    let modList = mods.split(',')
+    for (let i=0; i < modList.length; i++) {
+      allMods = allMods + ' rate-button_' + modList[i].trim()
+      }
+    }
+    let rateCount = rate ? parseInt(rate) : 0
+
+  .rate-button(class = allMods)
+    - let limit = rateCount - 5;
+    while rateCount > limit
+      span.rate-button__star(class = (rateCount-- > 0) ? 'rate-button__star_full' : '')

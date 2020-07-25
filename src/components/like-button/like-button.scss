@@ -1,0 +1,65 @@
+.like-button {
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 1.25rem;
+  line-height: 1.25rem;
+
+
+  &__input {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  &__marker {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.5rem;
+    height: 1.25rem;
+    border-radius: 0.625rem;
+    border: 1px solid $DarkShade25;
+  }
+
+  &__marker::before {
+    position: absolute;
+    left: 4px;
+    content: "favorite_border";
+    color: $DarkShade25;
+    @extend %MaterialIcon;
+    font-size: 0.625rem;
+    line-height: 1.125rem;
+  }
+
+  &__title {
+    color: $DarkShade25;
+    font-size: 0.5625rem;
+    padding-top: 1px;
+  }
+
+  &__input:checked + &__marker {
+    border: 1px solid $Purple;
+  }
+
+  &__input:checked ~ &__title {
+    color: $Purple;
+  }
+
+  &__input:checked + &__marker::before {
+    content: "favorite";
+    color: $Purple;
+  }
+
+  &__input:focus + &__marker {
+    box-shadow: 0 0 0 1px $Purple;
+  }
+}
