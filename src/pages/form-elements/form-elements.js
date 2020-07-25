@@ -2,6 +2,7 @@
 import './form-elements';
 
 
+//import '../../modules/field-checkbox/field-checkbox'; // неизвестный блок
 import { dropdown } from '../../components/dropdown/dropdown.js';
 import { MaskedTextField } from '../../components/masked-text-field/masked-text-field';
 
