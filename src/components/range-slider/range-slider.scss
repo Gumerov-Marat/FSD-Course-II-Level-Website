@@ -1,0 +1,177 @@
+/**
+Ion.RangeSlider, 2.3.0
+© Denis Ineshin, 2010 - 2018, IonDen.com
+Build date: 2018-12-11 23:23:51
+*/
+
+.range-slider {
+  width: 100%;
+
+  &__value {
+    color: $DarkShade50;
+  }
+}
+
+.irs {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.irs-line {
+  display: block;
+  position: relative;
+  outline: none !important;
+  overflow: hidden;
+}
+
+.irs-bar {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+}
+
+.irs-handle {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.irs-handle.type_last {
+  z-index: 2;
+}
+
+.irs-min,
+.irs-max {
+  display: block;
+  position: absolute;
+  cursor: default;
+}
+
+.irs-min {
+  left: 0;
+}
+
+.irs-max {
+  right: 0;
+}
+
+.irs-disable-mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -1%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0);
+  cursor: default;
+  width: 102%;
+  height: 100%;
+}
+
+.lt-ie9 .irs-disable-mask {
+  background: #000;
+  cursor: not-allowed;
+  filter: alpha(opacity=0);
+}
+
+.irs-disabled {
+  opacity: 0.4;
+}
+
+.irs-hidden-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.irs--flat {
+  height: 40px;
+}
+
+.irs--flat .irs-line {
+  top: 25px;
+  border: 1px solid $DarkShade25;
+  border-radius: 10px;
+  height: 12px;
+  height: 4px;
+}
+
+.irs--flat .irs-bar {
+  top: 25px;
+  height: 6px;
+
+  /* my */
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+
+.irs--flat .irs-bar--single {
+  border-radius: 4px 0 0 4px;
+}
+
+.irs--flat .irs-handle {
+  top: 20px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  width: 16px;
+  height: 16px;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+  display: none;
+}
+
+.range-slider {
+  position: relative;
+
+  &__line-title {
+    margin: 0;
+    line-height: 15px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  &__value {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0;
+    text-align: right;
+    line-height: 15px;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  &__description {
+    line-height: 14px;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-style: normal;
+  }
+}

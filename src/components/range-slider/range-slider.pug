@@ -1,0 +1,32 @@
+mixin range-slider(props={})
+
+  //- checkbox с label
+  //- Данные для JS храняться в атрибутах Data
+  //- 
+  //- Принимает параметры в props:
+  //- moduleClass             string      имя класса
+  //- lineTitle               string      заголовок
+  //- description             string      Описание
+
+  -
+    const {moduleClass, mods, maxValue, rangeLeft, rangeRight, description, lineTitle} = props
+    let allMods = ''
+    if (typeof(mods) !== 'undefined' && mods) {
+    let modList = mods.split(',')
+    for (let i=0; i < modList.length; i++) {
+      allMods = allMods + ' range-slider_' + modList[i].trim()
+      }
+    }
+
+  .range-slider(
+    class= moduleClass + allMods,
+    data-max-value = maxValue,
+    data-range-left = rangeLeft,
+    data-range-right = rangeRight
+    )
+    h3.range-slider__line-title= lineTitle ? lineTitle : ''
+    span.range-slider__value= ''
+    input.range-slider__input(type="text", name="my_range" value="" )
+    p.range-slider__description= description ? description : ''
+
+

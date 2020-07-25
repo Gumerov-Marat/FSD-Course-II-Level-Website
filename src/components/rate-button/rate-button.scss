@@ -1,0 +1,21 @@
+.rate-button {
+  display: inline-flex;
+  cursor: pointer;
+  justify-content: flex-start;
+
+  &__star:after {
+    background: $PrimaryGradient;
+    color: transparent;
+    content: "star_border";
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  &__star_full:after {
+    background: $PrimaryGradient;
+    color: transparent;
+    content: "star";
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
