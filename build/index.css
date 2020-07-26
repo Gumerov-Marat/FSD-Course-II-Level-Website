@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Material Icons";
   font-weight: 400;
@@ -39,6 +40,27 @@
   font-weight: 400;
   font-style: normal;
   src: url(fonts/Quicksand-Regular.eot) format("eot"), url(fonts/Quicksand-Regular.woff2) format("woff2"), url(fonts/Quicksand-Regular.woff) format("woff"), url(fonts/Quicksand-Regular.svg) format("svg"), url(fonts/Quicksand-Regular.ttf) format("truetype"); }
+
+.like-button__marker::before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  /* Preferred icon size */
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
 
 body,
 a,
@@ -158,6 +180,27 @@ span {
   font-weight: 400;
   font-style: normal;
   src: url(fonts/Quicksand-Regular.eot) format("eot"), url(fonts/Quicksand-Regular.woff2) format("woff2"), url(fonts/Quicksand-Regular.woff) format("woff"), url(fonts/Quicksand-Regular.svg) format("svg"), url(fonts/Quicksand-Regular.ttf) format("truetype"); }
+
+.like-button__marker::before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  /* Preferred icon size */
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
 
 body,
 a,
@@ -432,6 +475,27 @@ h3 {
   font-weight: 400;
   font-style: normal;
   src: url(fonts/Quicksand-Regular.eot) format("eot"), url(fonts/Quicksand-Regular.woff2) format("woff2"), url(fonts/Quicksand-Regular.woff) format("woff"), url(fonts/Quicksand-Regular.svg) format("svg"), url(fonts/Quicksand-Regular.ttf) format("truetype"); }
+
+.like-button__marker::before {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+  /* Preferred icon size */
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
 
 body,
 a,
@@ -845,6 +909,305 @@ span {
     padding: 0;
     padding-top: 10px; }
 
+.radio-buttons {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  user-select: none; }
+  .radio-buttons__label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 1.875rem;
+    line-height: 1.5rem;
+    color: rgba(31, 32, 65, 0.5);
+    font-size: 0.875rem; }
+  .radio-buttons__input {
+    appearance: none;
+    margin: 0; }
+  .radio-buttons__marker {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 100%;
+    width: 1.25rem;
+    height: 1.25rem; }
+  .radio-buttons__input:checked + .radio-buttons__marker {
+    border: 1px solid #BC9CFF; }
+  .radio-buttons__input:checked + .radio-buttons__marker::after {
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    width: 0.75rem;
+    height: 0.75rem;
+    content: ''; }
+  .radio-buttons__input:focus + .radio-buttons__marker {
+    box-shadow: 0 0 0 1px #BC9CFF; }
+
+.toggle {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 3.125rem;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  user-select: none; }
+  .toggle__input {
+    appearance: none;
+    box-sizing: border-box;
+    margin: 0; }
+  .toggle__marker {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0.0625rem solid rgba(31, 32, 65, 0.25);
+    border-radius: 0.625rem;
+    width: 2.5rem;
+    height: 1.25rem; }
+  .toggle__marker:after {
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.25rem;
+    border-radius: 50%;
+    background-color: rgba(31, 32, 65, 0.25);
+    width: 0.75rem;
+    height: 0.75rem;
+    content: ""; }
+  .toggle__input:checked + .toggle__marker {
+    border: 0.0625rem solid #BC9CFF; }
+  .toggle__input:checked + .toggle__marker:after {
+    position: absolute;
+    top: 0.1875rem;
+    left: 1.4375rem;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    width: 0.75rem;
+    height: 0.75rem;
+    content: ""; }
+  .toggle__input:focus + .toggle__marker {
+    box-shadow: 0 0 0 1px #BC9CFF; }
+  .toggle_bold {
+    font-weight: bold; }
+  .toggle_dark-shade75 {
+    color: rgba(31, 32, 65, 0.75); }
+
+.like-button {
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 1.25rem;
+  line-height: 1.25rem; }
+  .like-button__input {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0); }
+  .like-button__marker {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.5rem;
+    height: 1.25rem;
+    border-radius: 0.625rem;
+    border: 1px solid rgba(31, 32, 65, 0.25); }
+  .like-button__marker::before {
+    position: absolute;
+    left: 4px;
+    content: "favorite_border";
+    color: rgba(31, 32, 65, 0.25);
+    font-size: 0.625rem;
+    line-height: 1.125rem; }
+  .like-button__title {
+    color: rgba(31, 32, 65, 0.25);
+    font-size: 0.5625rem;
+    padding-top: 1px; }
+  .like-button__input:checked + .like-button__marker {
+    border: 1px solid #BC9CFF; }
+  .like-button__input:checked ~ .like-button__title {
+    color: #BC9CFF; }
+  .like-button__input:checked + .like-button__marker::before {
+    content: "favorite";
+    color: #BC9CFF; }
+  .like-button__input:focus + .like-button__marker {
+    box-shadow: 0 0 0 1px #BC9CFF; }
+
+.rate-button {
+  display: inline-flex;
+  cursor: pointer;
+  justify-content: flex-start; }
+  .rate-button__star:after {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: transparent;
+    content: "star_border";
+    -webkit-background-clip: text;
+    background-clip: text; }
+  .rate-button__star_full:after {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: transparent;
+    content: "star";
+    -webkit-background-clip: text;
+    background-clip: text; }
+
+/**
+Ion.RangeSlider, 2.3.0
+© Denis Ineshin, 2010 - 2018, IonDen.com
+Build date: 2018-12-11 23:23:51
+*/
+.range-slider {
+  width: 100%; }
+  .range-slider__value {
+    color: rgba(31, 32, 65, 0.5); }
+
+.irs {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+.irs-line {
+  display: block;
+  position: relative;
+  outline: none !important;
+  overflow: hidden; }
+
+.irs-bar {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0; }
+
+.irs-handle {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer; }
+
+.irs-handle.type_last {
+  z-index: 2; }
+
+.irs-min,
+.irs-max {
+  display: block;
+  position: absolute;
+  cursor: default; }
+
+.irs-min {
+  left: 0; }
+
+.irs-max {
+  right: 0; }
+
+.irs-disable-mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -1%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0);
+  cursor: default;
+  width: 102%;
+  height: 100%; }
+
+.lt-ie9 .irs-disable-mask {
+  background: #000;
+  cursor: not-allowed;
+  filter: alpha(opacity=0); }
+
+.irs-disabled {
+  opacity: 0.4; }
+
+.irs-hidden-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0); }
+
+.irs--flat {
+  height: 40px; }
+
+.irs--flat .irs-line {
+  top: 25px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  height: 12px;
+  height: 4px; }
+
+.irs--flat .irs-bar {
+  top: 25px;
+  height: 6px;
+  /* my */
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%); }
+
+.irs--flat .irs-bar--single {
+  border-radius: 4px 0 0 4px; }
+
+.irs--flat .irs-handle {
+  top: 20px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  width: 16px;
+  height: 16px; }
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none; }
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+  display: none; }
+
+.range-slider {
+  position: relative; }
+  .range-slider__line-title {
+    margin: 0;
+    line-height: 15px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    font-style: normal; }
+  .range-slider__value {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0;
+    text-align: right;
+    line-height: 15px;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-style: normal; }
+  .range-slider__description {
+    line-height: 14px;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-style: normal; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -910,4 +1273,24 @@ body {
 
 .elements-form-elements:last-of-type .elements-form-elements__column:last-child {
   padding-left: 10%; }
+
+.block-lib {
+  padding-bottom: 21px; }
+  .block-lib__description-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+  .block-lib__block-row {
+    padding-top: 5px; }
+  .block-lib__title {
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 15px;
+    font-size: 12px;
+    font-weight: bold; }
+  .block-lib__mods {
+    text-align: right;
+    line-height: 15px;
+    font-size: 12px; }
 

@@ -1,0 +1,65 @@
+.pager {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item {
+    cursor: pointer;
+    width: 20px;
+    vertical-align: center;
+    text-align: center;
+    line-height: 2.5rem;
+    color: $DarkShade50;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  &__item_free::before {
+    content: "...";
+  }
+
+  &__item_prev,
+  &__item_next {
+    position: relative;
+    border-radius: 50%;
+    background: $GreenGradient;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+    font-family: 'Material Icons';
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: normal;
+    /* Preferred icon size */
+    display: inline-block;
+    direction: ltr;
+    text-transform: none;
+    letter-spacing: normal;
+    white-space: nowrap;
+    word-wrap: normal;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  &__item_active {
+    position: relative;
+    border-radius: 50%;
+    background: $PrimaryGradient;
+    cursor: default;
+    width: 2.5rem;
+    color: white;
+  }
+
+  &__item_hiden {
+    display: none;
+  }
+}

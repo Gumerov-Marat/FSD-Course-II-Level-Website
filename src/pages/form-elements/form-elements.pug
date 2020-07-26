@@ -165,7 +165,7 @@ block main
         +range-slider({
           lineTitle: 'RANGE SLIDER',
         })
-      
+
 
       +free-space({height: '12px'})
       +block-lib({title: 'BUTTONS', width: '218px'})
@@ -219,9 +219,97 @@ block main
           })
 
 
+      +free-space({height: '20px'})
+      +block-lib({title: 'PAGINATION', width: "240px"})
+        +free-space({height: '10px'})
+        +pagination({})
+
+
   //- Нижний ряд
   +free-space({height: '79px'})
   section(class="" +elementsFormElements )
+    .elements-form-elements__column
+      +block-lib({title: 'DROPDOWN', mods: 'DEFAULT', width: '266px'})
+        +dropdown({
+          moduleClass: 'dropdown-envarenment-close',
+          isBtnClear: false,
+          isBtnSubmit: false,
+          dropStrings: [
+            {lineTitle: 'СПАЛЬНИ', maxCount: '2',
+            isCountSeparate: true,
+            namingForCount: 'спальня,спальни,спален'},
+            {lineTitle: 'КРОВАТИ', minCount: '1', maxCount: '4',
+            isCountSeparate: true,
+            namingForCount: 'кровать,кровати,кроватей'},
+            {lineTitle: 'ВАННЫЕ КОМНАТЫ', maxCount: '2',
+            isCountSeparate: true,
+            namingForCount: 'ванная комната,ванных комнаты,ванных комнат'}
+          ],
+          namingForAll: '',
+          namingForEmpty: 'Выбрать удобства'
+          })
+
+
+      +block-lib({title: 'DROPDOWN', mods: 'DEFAULT', width: '266px'})
+        +dropdown({
+          moduleClass: 'dropdown-envarenment-open',
+          mods: 'open',
+          isBtnClear: false,
+          isBtnSubmit: false,
+          dropStrings: [
+            {lineTitle: 'СПАЛЬНИ', maxCount: '2',
+            isCountSeparate: true,
+            namingForCount: 'спальня,спальни,спален'},
+            {lineTitle: 'КРОВАТИ', minCount: '1', maxCount: '4',
+            isCountSeparate: true,
+            namingForCount: 'кровать,кровати,кроватей'},
+            {lineTitle: 'ВАННЫЕ КОМНАТЫ', maxCount: '2',
+            isCountSeparate: true,
+            namingForCount: 'ванная комната,ванных комнаты,ванных комнат'}
+          ],
+          namingForAll: '',
+          namingForEmpty: 'Выбрать удобства'
+          })
+
+
+    .elements-form-elements__column
+      +block-lib({title: 'DROPDOWN', mods: 'DEFAULT', width: '320px'})
+        +dropdown({
+          moduleClass: 'dropdown-visitors-without-clear',
+          mods: 'open',
+          isBtnClear: false,
+          isBtnSubmit: true,
+          dropStrings: [
+            {lineTitle: 'ВЗРОСЛЫЕ', maxCount: '5'},
+            {lineTitle: 'ДЕТИ', maxCount: '5'},
+            {lineTitle: 'МЛАДЕНЦЫ', maxCount: '5',
+            isCountSeparate: true,
+            namingForCount: 'младенец,младенца,младенцев'}
+          ],
+          namingForAll: 'гость,гостя,гостей',
+          namingForEmpty: 'Сколько гостей'
+          })
+
+
+    .elements-form-elements__column
+      +block-lib({title: 'DROPDOWN', mods: 'DEFAULT', width: '320px'})
+        +dropdown({
+          moduleClass: 'dropdown-visitors-clear',
+          mods: 'open',
+          isBtnClear: true,
+          isBtnSubmit: true,
+          dropStrings: [
+            {lineTitle: 'ВЗРОСЛЫЕ', maxCount: '5'},
+            {lineTitle: 'ДЕТИ', maxCount: '5'},
+            {lineTitle: 'МЛАДЕНЦЫ', maxCount: '5',
+            isCountSeparate: true,
+            namingForCount: 'младенец,младенца,младенцев'}
+          ],
+          namingForAll: 'гость,гостя,гостей',
+          namingForEmpty: 'Сколько гостей'
+          })
+
+
 
   +free-space({height: '79px'})
   section(class="" +elementsFormElements )
