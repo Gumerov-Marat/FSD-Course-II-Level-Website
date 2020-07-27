@@ -1,0 +1,42 @@
+@import '../text-field/text-field.scss';
+@import '../buttons/buttons.scss';
+
+.form-login {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  background: #FFFFFF;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 380px;
+
+  &__section {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 320px;
+  }
+
+  &__section_button {
+    padding-top: 10px;
+  }
+
+  &__item {
+    padding-bottom: 10px;
+  }
+
+  &__title {
+    text-transform: none;
+    margin: 0;
+  }
+
+  &__registration-wrapper {
+    width: 99px;
+  }
+
+  &__section_registration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
