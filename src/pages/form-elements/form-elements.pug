@@ -225,7 +225,7 @@ block main
         +pagination({})
 
 
-  //- Нижний ряд
+  //- 2й ряд
   +free-space({height: '79px'})
   section(class="" +elementsFormElements )
     .elements-form-elements__column
@@ -310,9 +310,116 @@ block main
           })
 
 
-
+  //- 3й ряд
   +free-space({height: '79px'})
   section(class="" +elementsFormElements )
+    .elements-form-elements__column
+      +block-lib-self-title({width: '266px'})
+        +expandable-checkbox-list({
+          listTitle: 'EXPANDABLE CHECKBOX LIST',
+          moduleClass: 'check-list-test',
+          dropStrings: [
+            {dataName: 'checkbox-breakfast',
+            labelTitle: 'Завтрак'},
+            {dataName: 'checkbox-table',
+            labelTitle: 'Письменный стол',
+            checked: true},
+            {dataName: 'checkbox-childChair',
+            labelTitle: 'Стул для кормления',
+            checked: true},
+            {dataName: 'checkbox-childBed',
+            labelTitle: 'Кроватка',
+            checked: true},
+            {dataName: 'checkbox-TV1',
+            labelTitle: 'Телевизор'},
+            {dataName: 'checkbox-showerGel1',
+            labelTitle: 'Шампунь'},
+            {dataName: 'checkbox-TV2',
+            labelTitle: 'Телевизор'},
+            {dataName: 'checkbox-showerGel2',
+            labelTitle: 'Шампунь'}
+          ]
+        })
+
+
+      +block-lib-self-title({width: '266px'})
+        +expandable-checkbox-list({
+          listTitle: 'EXPANDABLE CHECKBOX LIST',
+          moduleClass: 'check-list-test-open',
+          mods: 'open',
+          dropStrings: [
+            {dataName: 'checkbox-breakfast',
+            labelTitle: 'Завтрак'},
+            {dataName: 'checkbox-table',
+            labelTitle: 'Письменный стол',
+            checked: true},
+            {dataName: 'checkbox-childChair',
+            labelTitle: 'Стул для кормления',
+            checked: true},
+            {dataName: 'checkbox-childBed',
+            labelTitle: 'Кроватка',
+            checked: true},
+            {dataName: 'checkbox-TV1',
+            labelTitle: 'Телевизор'},
+            {dataName: 'checkbox-showerGel1',
+            labelTitle: 'Шампунь'},
+            {dataName: 'checkbox-TV2',
+            labelTitle: 'Телевизор'},
+            {dataName: 'checkbox-showerGel2',
+            labelTitle: 'Шампунь'}
+          ]
+        })
+
+
+    .elements-form-elements__column
+      +free-space({height: '14px'})
+      +block-lib-self-title({width: '266px'})
+        +rich-checkbox-buttons({
+          listTitle: 'rich checkbox buttons',
+          listStrings: [
+            {
+              labelTitle: 'Широкий коридор',
+              labelDiscription: 'Ширина коридоров в номере не менее 91 см.',
+              moduleClass: 'rich-checkbox-test'
+            },
+            {
+              labelTitle: 'Помощник для инвалидов',
+              labelDiscription: 'На 1 этаже вас встретит специалист  и проводит до номера.',
+              moduleClass: 'rich-checkbox-test'
+            }
+          ]
+        })
+
+
+    .elements-form-elements__column
+      +free-space({height: '14px'})
+      +block-lib({title: 'BULLET LIST', width: '280px'})
+        +bullet-list({
+          bulletStrings: [
+            {description: 'Нельзя с питомцами'},
+            {description: 'Без вечеринок и мероприятий'},
+            {description: 'Время прибытия — после 13:00,<br>а выезд до 12:00'}
+          ]
+        })
+  
 
   +free-space({height: '190px'})
-  section.elements
+  section(class="" +elementsFormElements )
+    .elements-form-elements__column
+      +block-lib({ width: '280px'})
+      //-
+        +icon-text-list({
+          iconStrings: [
+            {
+            icon: 'insert_emoticon',
+            lineTitle: 'Комфорт',
+            description: 'Шумопоглощающие стены'
+            },
+            {
+            icon: 'location_city',
+            lineTitle: 'Удобство',
+            description: 'Окно в каждой из спален'
+            }
+          ]
+        })
+

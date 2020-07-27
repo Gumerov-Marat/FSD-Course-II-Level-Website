@@ -1,0 +1,16 @@
+@import '../icon-text/icon-text.scss';
+
+.icon-text-list {
+  &__separate {
+    margin: 1.25rem 0;
+    border: none;
+    background-color: $DarkShade10;
+    width: 100%;
+    height: 0.0625rem;
+    color: $DarkShade10;
+  }
+
+  &__separate:nth-last-child() {
+    margin-bottom: 0;
+  }
+}
