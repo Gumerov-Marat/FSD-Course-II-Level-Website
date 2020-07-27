@@ -2,7 +2,7 @@
 import './form-elements';
 
 
-//import '../../modules/field-checkbox/field-checkbox'; // неизвестный блок
+//import '../../components/field-checkbox/field-checkbox'; // неизвестный блок
 import { dropdown } from '../../components/dropdown/dropdown.js';
 import { MaskedTextField } from '../../components/masked-text-field/masked-text-field';
 
@@ -25,11 +25,11 @@ readyPage(() => {
 });
 
 // изображения
-// import '../../modules/comment/img/avatar-free.png'
-// import './images/avatar.png'
-// import '../../modules/logo/images/logo.svg'
-// import '../../modules/logo/images/logo-gray.svg'
-// import '../../modules/logo/images/logo-mobile.svg'
+ import '../../assets/images/avatar-free.png';
+ import '../../assets/images/avatar.png';
+ import '../../components/logo/images/logo.svg';
+ import '../../components/logo/images/logo-gray.svg';
+ import '../../components/logo/images/logo-mobile.svg';
 
 
 // собственные модули

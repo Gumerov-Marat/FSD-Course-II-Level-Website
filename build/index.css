@@ -41,7 +41,7 @@
   font-style: normal;
   src: url(fonts/Quicksand-Regular.eot) format("eot"), url(fonts/Quicksand-Regular.woff2) format("woff2"), url(fonts/Quicksand-Regular.woff) format("woff"), url(fonts/Quicksand-Regular.svg) format("svg"), url(fonts/Quicksand-Regular.ttf) format("truetype"); }
 
-.like-button__marker::before {
+.like-button__marker::before, .icon-text__icon {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -181,7 +181,7 @@ span {
   font-style: normal;
   src: url(fonts/Quicksand-Regular.eot) format("eot"), url(fonts/Quicksand-Regular.woff2) format("woff2"), url(fonts/Quicksand-Regular.woff) format("woff"), url(fonts/Quicksand-Regular.svg) format("svg"), url(fonts/Quicksand-Regular.ttf) format("truetype"); }
 
-.like-button__marker::before {
+.like-button__marker::before, .icon-text__icon {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -476,7 +476,7 @@ h3 {
   font-style: normal;
   src: url(fonts/Quicksand-Regular.eot) format("eot"), url(fonts/Quicksand-Regular.woff2) format("woff2"), url(fonts/Quicksand-Regular.woff) format("woff"), url(fonts/Quicksand-Regular.svg) format("svg"), url(fonts/Quicksand-Regular.ttf) format("truetype"); }
 
-.like-button__marker::before {
+.like-button__marker::before, .icon-text__icon {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
@@ -1395,115 +1395,149 @@ Build date: 2018-12-11 23:23:51
     background-color: rgba(31, 32, 65, 0.25);
     border-radius: 0.625rem; }
 
-.text-field {
+.icon-text {
   box-sizing: border-box;
-  outline: none;
-  border: 0.0625rem solid rgba(31, 32, 65, 0.25);
-  border-radius: 0.25rem;
-  padding: 0;
-  padding-left: 0.9375rem;
+  position: relative;
   width: 100%;
-  height: 44px;
-  color: rgba(31, 32, 65, 0.75);
-  font-family: Montserrat;
-  font-size: 0.875rem;
-  font-weight: normal;
-  font-style: normal; }
-  .text-field:focus {
-    box-shadow: 0 0 0 0.5px #BC9CFF; }
-  .text-field::placeholder {
-    color: rgba(31, 32, 65, 0.25); }
-  .text-field_focused::placeholder {
-    color: rgba(31, 32, 65, 0.75); }
-  .text-field:hover::placeholder {
-    color: rgba(31, 32, 65, 0.75); }
-
-.text-field:hover, .text-field_focused, .masked-text-field:hover, .masked-text-field_focused {
-  border: 0.0625rem solid rgba(31, 32, 65, 0.5); }
-
-.buttons:hover, .buttons_hover {
-  transition-duration: .3s;
-  opacity: .5; }
-
-.buttons {
-  box-sizing: border-box;
-  outline: none;
-  cursor: pointer;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  font-weight: bold; }
-  .buttons_full {
-    border: none;
-    border-radius: 1.375rem;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    width: 100%;
-    height: 2.75rem;
-    color: white; }
-  .buttons_border {
-    border: solid 0.125rem transparent;
-    border-radius: 1.375rem;
-    box-shadow: 2px 1000px 1px #fff inset;
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    background-clip: content-box, border-box;
-    background-origin: border-box;
-    width: 100%;
-    height: 2.75rem;
-    color: #BC9CFF; }
-  .buttons_link {
-    display: inline-block;
-    margin: 0;
-    border: none;
-    border: none;
-    background: transparent;
-    padding: 0;
-    color: #BC9CFF; }
-  .buttons_link:focus {
-    box-shadow: none; }
-  .buttons_big {
-    width: 20rem; }
-  .buttons_arrow {
-    position: relative; }
-  .buttons_arrow::after {
+  padding-left: 3.625rem;
+  user-select: none;
+  cursor: pointer; }
+  .icon-text__icon {
     position: absolute;
-    top: 0.625rem;
-    right: 0.625rem;
-    content: 'arrow_forward'; }
-  .buttons_dark {
-    color: rgba(31, 32, 65, 0.5); }
-  .buttons_free-height {
-    height: 100%; }
-  .buttons_padding20 {
-    width: auto;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem; }
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-clip: text;
+    line-height: 3rem;
+    color: transparent;
+    font-size: 3rem; }
+  .icon-text__lineTitle {
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: 0.875rem; }
+  .icon-text__description {
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: 0.875rem; }
 
-.form-login {
+.icon-text {
   box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  background: #FFFFFF;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  width: 380px; }
-  .form-login__section {
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 320px; }
-  .form-login__section_button {
-    padding-top: 10px; }
-  .form-login__item {
-    padding-bottom: 10px; }
-  .form-login__title {
-    text-transform: none;
-    margin: 0; }
-  .form-login__registration-wrapper {
-    width: 99px; }
-  .form-login__section_registration {
+  position: relative;
+  width: 100%;
+  padding-left: 3.625rem;
+  user-select: none;
+  cursor: pointer; }
+  .icon-text__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-clip: text;
+    line-height: 3rem;
+    color: transparent;
+    font-size: 3rem; }
+  .icon-text__lineTitle {
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: 0.875rem; }
+  .icon-text__description {
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: 0.875rem; }
+
+.icon-text-list__separate {
+  margin: 1.25rem 0;
+  border: none;
+  background-color: rgba(31, 32, 65, 0.1);
+  width: 100%;
+  height: 0.0625rem;
+  color: rgba(31, 32, 65, 0.1); }
+
+.icon-text-list__separate:nth-last-child {
+  margin-bottom: 0; }
+
+.like-button {
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 1.25rem;
+  line-height: 1.25rem; }
+  .like-button__input {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0); }
+  .like-button__marker {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.5rem;
+    height: 1.25rem;
+    border-radius: 0.625rem;
+    border: 1px solid rgba(31, 32, 65, 0.25); }
+  .like-button__marker::before {
+    position: absolute;
+    left: 4px;
+    content: "favorite_border";
+    color: rgba(31, 32, 65, 0.25);
+    font-size: 0.625rem;
+    line-height: 1.125rem; }
+  .like-button__title {
+    color: rgba(31, 32, 65, 0.25);
+    font-size: 0.5625rem;
+    padding-top: 1px; }
+  .like-button__input:checked + .like-button__marker {
+    border: 1px solid #BC9CFF; }
+  .like-button__input:checked ~ .like-button__title {
+    color: #BC9CFF; }
+  .like-button__input:checked + .like-button__marker::before {
+    content: "favorite";
+    color: #BC9CFF; }
+  .like-button__input:focus + .like-button__marker {
+    box-shadow: 0 0 0 1px #BC9CFF; }
+
+.comment {
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 3.75rem;
+  width: 100%; }
+  .comment__photo-ring {
     display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: center;
+    margin: auto;
+    border: 0.125rem solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0.625rem 1.25rem rgba(31, 32, 65, 0.1);
+    width: 2.75rem;
+    height: 2.75rem;
+    overflow: hidden; }
+  .comment__like-button {
+    position: absolute;
+    top: 63px;
+    left: 0.3125rem; }
+  .comment__date {
+    padding-top: 1px; }
+  .comment__user-name {
+    margin: 0;
+    padding-top: 0.1875rem;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+    font-size: 14px;
+    font-weight: bold; }
+  .comment__text {
+    padding-top: 10px;
+    width: calc(100% - 3.75rem); }
 
 * {
   margin: 0;
