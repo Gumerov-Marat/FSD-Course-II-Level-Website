@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var map = {\n\t\"./assets/fonts/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/Montserrat-Bold.svg\": \"./src/assets/fonts/Montserrat-Bold.svg\",\n\t\"./assets/fonts/Montserrat-Regular.svg\": \"./src/assets/fonts/Montserrat-Regular.svg\",\n\t\"./assets/fonts/OpenSans-Bold.svg\": \"./src/assets/fonts/OpenSans-Bold.svg\",\n\t\"./assets/fonts/OpenSans-Regular.svg\": \"./src/assets/fonts/OpenSans-Regular.svg\",\n\t\"./assets/fonts/Quicksand-Bold.svg\": \"./src/assets/fonts/Quicksand-Bold.svg\",\n\t\"./assets/fonts/Quicksand-Regular.svg\": \"./src/assets/fonts/Quicksand-Regular.svg\",\n\t\"./components/logo/images/logo-gray.svg\": \"./src/components/logo/images/logo-gray.svg\",\n\t\"./components/logo/images/logo-mobile.svg\": \"./src/components/logo/images/logo-mobile.svg\",\n\t\"./components/logo/images/logo.svg\": \"./src/components/logo/images/logo.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg|gif)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg%7Cgif)$?");
+eval("var map = {\n\t\"./assets/fonts/MaterialIcons-Regular.svg\": \"./src/assets/fonts/MaterialIcons-Regular.svg\",\n\t\"./assets/fonts/Montserrat-Bold.svg\": \"./src/assets/fonts/Montserrat-Bold.svg\",\n\t\"./assets/fonts/Montserrat-Regular.svg\": \"./src/assets/fonts/Montserrat-Regular.svg\",\n\t\"./assets/fonts/OpenSans-Bold.svg\": \"./src/assets/fonts/OpenSans-Bold.svg\",\n\t\"./assets/fonts/OpenSans-Regular.svg\": \"./src/assets/fonts/OpenSans-Regular.svg\",\n\t\"./assets/fonts/Quicksand-Bold.svg\": \"./src/assets/fonts/Quicksand-Bold.svg\",\n\t\"./assets/fonts/Quicksand-Regular.svg\": \"./src/assets/fonts/Quicksand-Regular.svg\",\n\t\"./components/comment/img/avatar-free.png\": \"./src/components/comment/img/avatar-free.png\",\n\t\"./components/logo/images/logo-gray.svg\": \"./src/components/logo/images/logo-gray.svg\",\n\t\"./components/logo/images/logo-mobile.svg\": \"./src/components/logo/images/logo-mobile.svg\",\n\t\"./components/logo/images/logo.svg\": \"./src/components/logo/images/logo.svg\"\n};\n\n\nfunction webpackContext(req) {\n\tvar id = webpackContextResolve(req);\n\treturn __webpack_require__(id);\n}\nfunction webpackContextResolve(req) {\n\tif(!__webpack_require__.o(map, req)) {\n\t\tvar e = new Error(\"Cannot find module '\" + req + \"'\");\n\t\te.code = 'MODULE_NOT_FOUND';\n\t\tthrow e;\n\t}\n\treturn map[req];\n}\nwebpackContext.keys = function webpackContextKeys() {\n\treturn Object.keys(map);\n};\nwebpackContext.resolve = webpackContextResolve;\nmodule.exports = webpackContext;\nwebpackContext.id = \"./src sync recursive \\\\.(png|svg|jpg|gif)$\";\n\n//# sourceURL=webpack:///./src_sync_\\.(png%7Csvg%7Cjpg%7Cgif)$?");
 
 /***/ }),
 
@@ -189,6 +189,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/Quicksand-Regular.svg\");\n\n//# sourceURL=webpack:///./src/assets/fonts/Quicksand-Regular.svg?");
+
+/***/ }),
+
+/***/ "./src/components/comment/img/avatar-free.png":
+/*!****************************************************!*\
+  !*** ./src/components/comment/img/avatar-free.png ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"images/avatar-free.png\");\n\n//# sourceURL=webpack:///./src/components/comment/img/avatar-free.png?");
 
 /***/ }),
 
