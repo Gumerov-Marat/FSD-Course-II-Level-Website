@@ -1,39 +1,30 @@
-include ../text-field/text-field.pug
-include ../buttons/buttons.pug
+mixin icon-text(props={})
 
-mixin form-login(props={})
+  //- Текст с иконкой
+  //- Принимает объект props с ключами:
+  //- moduleClass             string      доп имя класса
+  //- mods                    string      модификации
+  //- icon                    string      иконка из шрифта material icons
+  //- lineTitle               string      Заголовок текста
+  //- description             string      описание
+
+    Пример вызова
+      +icon-text({
+        icon: 'star',
+        lineTitle: 'Комфорт',
+        description: 'внимательные сотрудники'
+      })
 
   -
-    let moduleClass = (props.moduleClass) ? props.moduleClass : ''
+    const {mods, icon, lineTitle, description} = props
     let allMods = ''
-    if (typeof(props.mods) !== 'undefined' && props.mods) {
-    let modList = props.mods.split(',')
+    if (typeof(mods) !== 'undefined' && mods) {
+    let modList = mods.split(',')
     for (let i=0; i < modList.length; i++) {
-      allMods = allMods + ' form-login_' + modList[i].trim()
+      allMods = allMods + ' icon-text_' + modList[i].trim()
       }
     }
-
-  form.form-login(class = moduleClass + allMods)
-    header.form-login__section
-      h1.form-login__title Войти
-
-
-    .form-login__section
-      .form-login__item
-        +text-field({placeholder: 'Email'})
-      .form-login__item
-        +text-field({placeholder: 'Пароль'})
-
-    .form-login__section.form-login__section_button
-      .form-login__item
-        +buttons({
-            lineTitle: 'Войти',
-            mods: 'full, arrow, big'
-            })
-    .form-login__section.form-login__section_registration
-      p.form-login__invite Нет аккаунта на Toxin?
-      .form-login__registration-wrapper
-        +buttons({
-            lineTitle: 'Создать',
-            mods: 'border'
-            })
+  .icon-text(class= allMods)
+    span.icon-text__icon= icon
+    h3.icon-text__lineTitle= lineTitle || ''
+    p.icon-text__description= description || ''
