@@ -401,13 +401,12 @@ block main
             {description: 'Время прибытия — после 13:00,<br>а выезд до 12:00'}
           ]
         })
-  
+
 
   +free-space({height: '190px'})
   section(class="" +elementsFormElements )
     .elements-form-elements__column
       +block-lib({ width: '280px'})
-      //-
         +icon-text-list({
           iconStrings: [
             {
@@ -421,5 +420,18 @@ block main
             description: 'Окно в каждой из спален'
             }
           ]
+        })
+    
+
+    .elements-form-elements__column
+      +free-space({height: '7px'})
+      +block-lib({width: '712px'})
+        +comment({
+          user:    'Мурад Сарафанов',
+          photo:   './images/avatar.png',
+          date:    '5 дней назад',
+          like:    '12',
+          likeChecked: true,
+          text:    'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'
         })
 

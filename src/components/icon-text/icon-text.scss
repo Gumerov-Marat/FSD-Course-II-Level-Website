@@ -1,42 +1,33 @@
-@import '../text-field/text-field.scss';
-@import '../buttons/buttons.scss';
-
-.form-login {
+.icon-text {
   box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
-  background: #FFFFFF;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  width: 380px;
+  position: relative;
+  width: 100%;
+  padding-left: 3.625rem;
+  user-select: none;
+  cursor: pointer;
 
-  &__section {
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 320px;
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $PrimaryGradient;
+    background-clip: text;
+    line-height: 3rem;
+    color: transparent;
+    font-size: 3rem;
+    @extend %MaterialIcon;
   }
 
-  &__section_button {
-    padding-top: 10px;
-  }
-
-  &__item {
-    padding-bottom: 10px;
-  }
-
-  &__title {
-    text-transform: none;
+  &__lineTitle {
     margin: 0;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
   }
 
-  &__registration-wrapper {
-    width: 99px;
+  &__description {
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
   }
 
-  &__section_registration {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 }
