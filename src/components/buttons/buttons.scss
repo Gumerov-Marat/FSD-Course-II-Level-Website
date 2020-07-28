@@ -79,7 +79,7 @@
     top: 0.625rem;
     right: 0.625rem;
     content: 'arrow_forward';
-    //@extend %MaterialIcon
+    @extend %MaterialIcon
   }
 
   // Модификатор dark - надпись в кнопке серым цветом

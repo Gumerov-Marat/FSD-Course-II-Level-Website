@@ -5,6 +5,8 @@ import './form-elements';
 //import '../../components/field-checkbox/field-checkbox'; // неизвестный блок
 import { dropdown } from '../../components/dropdown/dropdown.js';
 import { MaskedTextField } from '../../components/masked-text-field/masked-text-field';
+import { expCheckboxList } from '../../components/expandable-checkbox-list/expandable-checkbox-list.js';
+import { Pager } from './../../components/pagination/pagination';
 
 
 var readyPage = (callback) => {
@@ -22,6 +24,14 @@ readyPage(() => {
 
   const demoDropDownEnarenmentClose = new dropdown('.dropdown-envarenment-close');
   const demoDropDownEnarenmentOpen = new dropdown('.dropdown-envarenment-open');
+
+
+   // блок Paginator
+   const pager = new Pager({
+     items: 15,
+     itemsOnPage: 5,
+     element: '.pager'
+   })
 });
 
 // изображения
@@ -34,3 +44,4 @@ readyPage(() => {
 
 // собственные модули
 // import '../../modules/field-checkbox/field-checkbox'
+
