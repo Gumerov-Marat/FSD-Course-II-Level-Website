@@ -6,18 +6,6 @@
   user-select: none;
   cursor: pointer;
 
-  &__icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: $PrimaryGradient;
-    background-clip: text;
-    line-height: 3rem;
-    color: transparent;
-    font-size: 3rem;
-    @extend %MaterialIcon;
-  }
-
   &__lineTitle {
     margin: 0;
     line-height: 1.5rem;
@@ -31,3 +19,42 @@
   }
 
 }
+
+span.icon-text__icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3rem;
+  background: $PrimaryGradient;
+  background-clip: text;  
+  line-height: 3rem;
+  /* Preferred icon size */
+  display: inline-block;
+  // line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+// span.icon-text__icon {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   background: $PrimaryGradient;
+//   background-clip: text;
+//   line-height: 3rem;
+//   color: transparent;
+//   font-size: 3rem;
+//   @extend %MaterialIcon;
+// }

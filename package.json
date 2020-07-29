@@ -39,6 +39,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@material/icon-button": "^7.0.0",
     "material-icons": "^0.3.1"
   }
 }
