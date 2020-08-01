@@ -4,7 +4,7 @@ module.exports = function () {
             stats: 'errors-only',
             open: true,
             overlay: true,
-            port: 9000
+            port: 9003
         },
     }
 };
