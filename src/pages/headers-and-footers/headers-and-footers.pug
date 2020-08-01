@@ -28,10 +28,19 @@ block main
       +logo({mods: 'gray'})
   //- +free-space({height: '57px'})
 
-  section.elements
+  section(class="" +elementsHeadersAndFooters )
     +standard-nav-bar(
       {
       itemsList: itemsList
       }
     )
   //- +free-space({height: '40px'})
+
+  section(class="" +elementsHeadersAndFooters )
+    +standard-nav-bar(
+      {
+        itemsList: itemsList,
+        mods: 'logged-in',
+        userName: 'Cosmin Negoita'
+      }
+    )
