@@ -1,0 +1,75 @@
+include ../logo/logo.pug
+include ../navigation/navigation.pug
+include ../buttons/buttons.pug
+
+mixin standard-nav-bar(props={})
+  //- standard nav-bav
+  //- Input object props with keys
+  //- mods  {string}  modifiers separated by commas
+  //- modifiers:
+        _logged-in  Shows username
+
+    Example for call:
+    -
+      const itemMenu    = {item: 'Home',link: '#',mods: 'active'}
+      const itemAboutUs = {item: 'About Us',ink: '#'}
+      const itemCareers = {item: 'Careers',link: '#'}
+      const itemNews    = {item: 'News',link: '#'}
+      const itemDocs    = {item: 'Documentation',link: '#'}
+      const subItemOurServices = {item: 'Our Services',link: '#'}
+      const itemServices  = {item: 'Services',link: '#',mods: 'sub',subList: [subItemOurServices]}
+
+      const itemsList = [itemMenu, itemAboutUs,itemServices,itemCareers,itemNews,itemDocs]
+
+    +standard-nav-bar(
+      {
+        itemsList: itemsList,
+        mods: 'logged-in',
+        userName: 'Cosmin Negoita'
+      }
+    )
+
+  -
+    const {mods, userName, itemsList, buttonLogin, buttonRegister} = props
+    let allMods = ''
+    let loggedIn = false
+    if (typeof(mods) !== 'undefined' && mods) {
+    let modList = mods.split(',')
+    for (let i=0; i < modList.length; i++) {
+      if (modList[i].trim() === 'logged-in') {
+        loggedIn = true
+      }
+      allMods = allMods + ' standard-nav-bar_' + modList[i].trim()
+      }
+    }
+
+  .standard-nav-bar(class = allMods)
+    .standard-nav-bar__container
+      .standard-nav-bar__mobile-logo
+        +logo({mods: 'mobile'})
+      .standard-nav-bar__logo
+        +logo()
+
+      span.standard-nav-bar__mobile-menu menu
+      .standard-nav-bar__navigation-region
+        +navigation({itemsList})
+
+      span.standard-nav-bar__mobile-profile person_outline
+      .standard-nav-bar__login-region
+        if loggedIn
+          .standard-nav-bar__logged-element
+            span.standard-nav-bar__login-separator s
+          .standard-nav-bar__logged-element
+            p.standard-nav-bar__user-name= userName
+
+        else
+          .standard-nav-bar__logged-element
+            +buttons({
+              lineTitle: buttonLogin || 'login',
+              mods: 'border, free-height, padding20'
+            })
+          .standard-nav-bar__logged-element
+            +buttons({
+              lineTitle: buttonRegister || 'register',
+              mods: 'full, free-height, padding20'
+            })

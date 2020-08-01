@@ -1,9 +1,5 @@
 extends ../template/template.pug
 
-//- Миксины используемые на странице описаны в конце
-//- mixin free-space(props={})    задает отступ по ширине и/или высоте
-
-
 
 block meta
   meta(name="keywords", content="toxin, form elements")
@@ -12,3 +8,30 @@ block meta
 block title
   |
   = 'Headers & Footers'
+
+
+  //- menu items for test page
+  -
+    const itemMenu    = {item: 'Home',link: '#',mods: 'active'}
+    const itemAboutUs = {item: 'About Us',ink: '#'}
+    const itemCareers = {item: 'Careers',link: '#'}
+    const itemNews    = {item: 'News',link: '#'}
+    const itemDocs    = {item: 'Documentation',link: '#'}
+    const subItemOurServices = {item: 'Our Services',link: '#'}
+    const itemServices  = {item: 'Services',link: '#',mods: 'sub',subList: [subItemOurServices]}
+    const itemsList = [itemMenu, itemAboutUs,itemServices,itemCareers,itemNews,itemDocs]
+
+block main
+  - var elementsHeadersAndFooters = 'elements-headers-and-footers';
+  section(class="" +elementsHeadersAndFooters ).elements_logo
+    .elements__logo
+      +logo({mods: 'gray'})
+  //- +free-space({height: '57px'})
+
+  section.elements
+    +standard-nav-bar(
+      {
+      itemsList: itemsList
+      }
+    )
+  //- +free-space({height: '40px'})

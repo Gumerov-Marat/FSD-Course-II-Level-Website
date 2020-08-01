@@ -1,0 +1,44 @@
+mixin navigation(props = {})
+  //- Принимает объект props с ключами
+  //- mods      {string}  модификаторы
+  //- itemsList {string}  список пунктов или списков
+  //-   subList {string}
+
+  -
+    const {mods, itemsList} = props
+    let allMods = ''
+    if (typeof(mods) !== 'undefined' && mods) {
+    let modList = mods.split(',')
+    for (let i=0; i < modList.length; i++) {
+      allMods = allMods + ' navigation_' + modList[i].trim()
+      }
+    }
+
+  nav.navigation(class = allMods)
+    ul.navigation__menu
+      +navigation-items(itemsList, mods)
+
+
+mixin navigation-items(props = {})
+
+  each element in props
+
+    -
+      const {mods, item, link} = element
+      let allMods = ''
+      let sub = false
+      if (typeof(mods) !== 'undefined' && mods) {
+      let modList = mods.split(',')
+      for (let i=0; i < modList.length; i++) {
+        if (modList[i].trim() === 'sub') {
+          sub = true
+        }
+        allMods = allMods + ' navigation__item_' + modList[i].trim()
+        }
+      }
+
+
+    li.navigation__item(class= allMods)
+      a.navigation__item-link(href = link)!= item
+      if sub
+        span.navigation__item-marker expand_more
