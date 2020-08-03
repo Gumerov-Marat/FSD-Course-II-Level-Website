@@ -1,696 +1,112 @@
-
-<!--index page-->
-<!--TODO: need wrapper for every rich for best chooce. Need have possable chooce if click on tag p--><!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="toxin, form elements">
-    <meta name="description" content="Учебный проект FSD. Второе задание. Лист form-elements">
-    <title>Form Elements
-    </title>
-  <link href="index.css" rel="stylesheet"></head>
-  <body>
-    <section class="elements-form-elements">
-      <div class="elements-form-elements__logo">
-        <div class="logo  logo_gray">
-          <object class="logo__svg" data="./images/logo-gray.svg" type="image/svg+xml"></object>
-        </div>
-      </div>
-    </section>
-    <div class="free-space" style="height:60px;"></div>
-    <section class="elements-form-elements">
-      <div class="elements-form-elements__column">
-        <div class="block-lib" style="width:320px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">TEXT FIELD</h3>
-            <div class="block-lib__mods">DEFAULT</div>
-          </div>
-          <div class="block-lib__block-row">
-            <input class="text-field" placeholder="Email" type="text" autocomplete="off">
-          </div>
-        </div>
-        <div class="block-lib" style="width:320px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">TEXT FIELD</h3>
-            <div class="block-lib__mods">HOVER / FOCUS</div>
-          </div>
-          <div class="block-lib__block-row">
-            <input class="text-field  text-field_focused" placeholder="This is pretty awesome" type="text" autocomplete="off">
-          </div>
-        </div>
-        <div class="block-lib" style="width:320px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">DROPDOWN</h3>
-            <div class="block-lib__mods">DEFAULT</div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="dropdown dropdown-visitors">
-              <p class="dropdown__selection">Сколько гостей</p><span class="dropdown__marker">expand_more</span>
-              <div class="dropdown__menu" data-separate="гость,гостя,гостей">
-                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="">
-                  <p class="dropdown__line-title">ВЗРОСЛЫЕ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="">
-                  <p class="dropdown__line-title">ДЕТИ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="младенец,младенца,младенцев">
-                  <p class="dropdown__line-title">МЛАДЕНЦЫ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row dropdown__menu-row_buttons">
-                  <div class="dropdown__button-clear">
-                    <button class="buttons  buttons_link buttons_dark" type="button">ОЧИСТИТЬ</button>
-                  </div>
-                  <div class="dropdown__separator"></div>
-                  <div class="dropdown__button-submit">
-                    <button class="buttons  buttons_link" type="button">ПРИМЕНИТЬ</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block-lib" style="width:320px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">MASKED-TEXT-FIELD</h3>
-            <div class="block-lib__mods">DEFAULT</div>
-          </div>
-          <div class="block-lib__block-row">
-            <input class="masked-text-field" placeholder="ДД.ММ.ГГГ" type="text" name="date" pattern="[0-9]{2}.[0-9]{2}.[0-9]{4}">
-          </div>
-        </div>
-        <div class="block-lib" style="width:320px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title"></h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="free-space" style="height:14px;"></div>
-            <div class="elements__container">
-              <div class="elements__half-column">
-                <div class="block-lib" style="width:150px">
-                  <div class="block-lib__description-row">
-                    <h3 class="block-lib__title">DATE DROPDOWN</h3>
-                    <div class="block-lib__mods"></div>
-                  </div>
-                  <div class="block-lib__block-row">
-                    <div class="date-dropdown">
-                      <input class="text-field" placeholder="ДД.ММ.ГГГГ" type="text" autocomplete="off"><span class="date-dropdown__marker">expand_more</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="elements__half-column">
-                <div class="block-lib" style="width:150px">
-                  <div class="block-lib__description-row">
-                    <h3 class="block-lib__title">DATE DROPDOWN</h3>
-                    <div class="block-lib__mods"></div>
-                  </div>
-                  <div class="block-lib__block-row">
-                    <div class="date-dropdown">
-                      <input class="text-field" placeholder="19.08.2019" type="text" autocomplete="off"><span class="date-dropdown__marker">expand_more</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block-lib" style="width:266px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">filter date dropdown</h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="filter-date-dropdown">
-              <input class="text-field" placeholder="19 авг - 23 авг" type="text" autocomplete="off"><span class="filter-date-dropdown__marker">expand_more</span>
-            </div>
-          </div>
-        </div>
-        <div class="free-space" style="height:20px;"></div>
-        <div class="block-lib" style="width:266px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">SUBSCRIPTION TEXT FIELD</h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="subscription-text-field">
-              <input class="text-field" placeholder="Email" type="text" autocomplete="off"><span class="subscription-text-field__marker">arrow_forward</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="elements-form-elements__column">
-        <div class="block-lib" style="width:222px">
-          <div class="checkbox-buttons check-list-buttons">
-            <div class="checkbox-buttons__title-wrapper">
-              <p class="checkbox-buttons__title">CHECKBOX BUTTONS</p>
-            </div>
-            <div class="checkbox-buttons__menu">
-              <div class="checkbox-buttons__menu-row">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-smoking"><span class="field-checkbox__box"></span>Можно курить
-                </label>
-              </div>
-              <div class="checkbox-buttons__menu-row">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-pets" checked><span class="field-checkbox__box"></span>Можно с питомцами
-                </label>
-              </div>
-              <div class="checkbox-buttons__menu-row">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-guests" checked><span class="field-checkbox__box"></span>Можно пригласить гостей (до 10 человек)
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="free-space" style="height:22px;"></div>
-        <div class="block-lib" style="width:220px">
-          <div class="radio-buttons undefined">
-            <label class="radio-buttons__label">
-              <input class="radio-buttons__input" type="radio" name="radio-battons-test" value="man" checked><span class="radio-buttons__marker"></span>Мужчина
-              <!--TODO: добавить тег с текстом, для изменения цвета шрифта-->
-            </label>
-            <label class="radio-buttons__label">
-              <input class="radio-buttons__input" type="radio" name="radio-battons-test" value="woman"><span class="radio-buttons__marker"></span>Женщина
-              <!--TODO: добавить тег с текстом, для изменения цвета шрифта-->
-            </label>
-          </div>
-        </div>
-        <div class="free-space" style="height:16px;"></div>
-        <div class="block-lib" style="width:320px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">TOGGLE</h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="free-space" style="height:10px;"></div>
-            <label class="toggle">
-              <input class="toggle__input" type="checkbox" name="toggle" checked><span class="toggle__marker"></span>Получать спецпредложения
-            </label>
-            <div class="free-space" style="height:15px;"></div>
-            <label class="toggle">
-              <input class="toggle__input" type="checkbox" name="toggle"><span class="toggle__marker"></span>Получать спецпредложения
-            </label>
-          </div>
-        </div>
-        <div class="free-space" style="height:24px;"></div>
-        <div class="block-lib" style="width:90px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">LIKE BUTTON</h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="free-space" style="height:10px;"></div>
-            <div class="elements__container">
-              <div class="elements__half-column">
-                <label class="like-button">
-                  <input class="like-button__input" type="checkbox" name="like-button-test"><span class="like-button__marker"></span>
-                  <label class="like-button__title">2</label>
-                </label>
-              </div>
-              <div class="elements__half-column">
-                <div class="free-space" style="width:7px;"></div>
-                <label class="like-button">
-                  <input class="like-button__input" type="checkbox" name="like-button" checked><span class="like-button__marker"></span>
-                  <label class="like-button__title">12</label>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="free-space" style="height:20px;"></div>
-        <div class="block-lib" style="width:260px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">RATE-BUTTON</h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="free-space" style="height:5px;"></div>
-            <div class="elements__container">
-              <div class="elements__half-column">
-                <div class="block-lib" style="width:120px">
-                  <div class="block-lib__description-row">
-                    <h3 class="block-lib__title"></h3>
-                    <div class="block-lib__mods"></div>
-                  </div>
-                  <div class="block-lib__block-row">
-                    <div class="rate-button"><span class="rate-button__star rate-button__star_full"></span><span class="rate-button__star rate-button__star_full"></span><span class="rate-button__star rate-button__star_full"></span><span class="rate-button__star rate-button__star_full"></span><span class="rate-button__star"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="elements__half-column">
-                <div class="block-lib" style="width:120px">
-                  <div class="block-lib__description-row">
-                    <h3 class="block-lib__title"></h3>
-                    <div class="block-lib__mods"></div>
-                  </div>
-                  <div class="block-lib__block-row">
-                    <div class="rate-button"><span class="rate-button__star rate-button__star_full"></span><span class="rate-button__star rate-button__star_full"></span><span class="rate-button__star rate-button__star_full"></span><span class="rate-button__star rate-button__star_full"></span><span class="rate-button__star rate-button__star_full"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="elements-form-elements__column">
-        <div class="block-lib" style="width:266px">
-          <div class="range-slider undefined">
-            <h3 class="range-slider__line-title">RANGE SLIDER</h3><span class="range-slider__value"></span>
-            <input class="range-slider__input" type="text" name="my_range" value="">
-            <p class="range-slider__description"></p>
-          </div>
-        </div>
-        <div class="free-space" style="height:12px;"></div>
-        <div class="block-lib" style="width:218px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">BUTTONS</h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="free-space" style="height:12px;"></div>
-            <div class="elements__container">
-              <div class="elements__half-column">
-                <button class="buttons  buttons_full" type="button">CLICK ME</button>
-              </div>
-              <div class="elements__half-column">
-                <button class="buttons  buttons_full buttons_hover" type="button">CLICK ME</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block-lib" style="width:218px">
-          <div class="free-space" style="height:8px;"></div>
-          <div class="elements__container">
-            <div class="elements__half-column">
-              <button class="buttons  buttons_border" type="button">CLICK ME</button>
-            </div>
-            <div class="elements__half-column">
-              <button class="buttons  buttons_border buttons_hover" type="button">CLICK ME</button>
-            </div>
-          </div>
-        </div>
-        <div class="block-lib" style="width:142px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title"></h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="elements__container">
-              <div class="elements__half-column">
-                <button class="buttons  buttons_link" type="button">CLICK ME</button>
-              </div>
-              <div class="elements__half-column">
-                <button class="buttons  buttons_link buttons_dark" type="button">CLICK ME</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block-lib" style="width:320px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title"></h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <button class="buttons  buttons_full buttons_arrow buttons_big" type="button">ПЕРЕЙТИ К ОПЛАТЕ</button>
-          </div>
-        </div>
-        <div class="free-space" style="height:20px;"></div>
-        <div class="block-lib" style="width:240px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">PAGINATION</h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="free-space" style="height:10px;"></div>
-            <div class="pager undefined"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="free-space" style="height:79px;"></div>
-    <section class="elements-form-elements">
-      <div class="elements-form-elements__column">
-        <div class="block-lib" style="width:266px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">DROPDOWN</h3>
-            <div class="block-lib__mods">DEFAULT</div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="dropdown dropdown-envarenment-close">
-              <p class="dropdown__selection">Выбрать удобства</p><span class="dropdown__marker">expand_more</span>
-              <div class="dropdown__menu" data-separate="элемент, элемента, элементов">
-                <div class="dropdown__menu-row" data-maxcount="2" data-mincount="0" data-separate="спальня,спальни,спален">
-                  <p class="dropdown__line-title">СПАЛЬНИ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row" data-maxcount="4" data-mincount="1" data-separate="кровать,кровати,кроватей">
-                  <p class="dropdown__line-title">КРОВАТИ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">1</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row" data-maxcount="2" data-mincount="0" data-separate="ванная комната,ванных комнаты,ванных комнат">
-                  <p class="dropdown__line-title">ВАННЫЕ КОМНАТЫ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block-lib" style="width:266px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">DROPDOWN</h3>
-            <div class="block-lib__mods">DEFAULT</div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="dropdown dropdown-envarenment-open dropdown_open">
-              <p class="dropdown__selection">Выбрать удобства</p><span class="dropdown__marker">expand_more</span>
-              <div class="dropdown__menu" data-separate="элемент, элемента, элементов">
-                <div class="dropdown__menu-row" data-maxcount="2" data-mincount="0" data-separate="спальня,спальни,спален">
-                  <p class="dropdown__line-title">СПАЛЬНИ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row" data-maxcount="4" data-mincount="1" data-separate="кровать,кровати,кроватей">
-                  <p class="dropdown__line-title">КРОВАТИ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">1</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row" data-maxcount="2" data-mincount="0" data-separate="ванная комната,ванных комнаты,ванных комнат">
-                  <p class="dropdown__line-title">ВАННЫЕ КОМНАТЫ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="elements-form-elements__column">
-        <div class="block-lib" style="width:320px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">DROPDOWN</h3>
-            <div class="block-lib__mods">DEFAULT</div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="dropdown dropdown-visitors-without-clear dropdown_open">
-              <p class="dropdown__selection">Сколько гостей</p><span class="dropdown__marker">expand_more</span>
-              <div class="dropdown__menu" data-separate="гость,гостя,гостей">
-                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="">
-                  <p class="dropdown__line-title">ВЗРОСЛЫЕ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="">
-                  <p class="dropdown__line-title">ДЕТИ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="младенец,младенца,младенцев">
-                  <p class="dropdown__line-title">МЛАДЕНЦЫ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row dropdown__menu-row_buttons">
-                  <div class="dropdown__separator"></div>
-                  <div class="dropdown__button-submit">
-                    <button class="buttons  buttons_link" type="button">ПРИМЕНИТЬ</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="elements-form-elements__column">
-        <div class="block-lib" style="width:320px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">DROPDOWN</h3>
-            <div class="block-lib__mods">DEFAULT</div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="dropdown dropdown-visitors-clear dropdown_open">
-              <p class="dropdown__selection">Сколько гостей</p><span class="dropdown__marker">expand_more</span>
-              <div class="dropdown__menu" data-separate="гость,гостя,гостей">
-                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="">
-                  <p class="dropdown__line-title">ВЗРОСЛЫЕ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="">
-                  <p class="dropdown__line-title">ДЕТИ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row" data-maxcount="5" data-mincount="0" data-separate="младенец,младенца,младенцев">
-                  <p class="dropdown__line-title">МЛАДЕНЦЫ</p>
-                  <div class="dropdown__controls">
-                    <div class="dropdown__control-decrement dropdown__control-button"><span class="dropdown__icon-decrement">-</span></div><span class="dropdown__control-count">0</span>
-                    <div class="dropdown__control-increment dropdown__control-button"><span class="dropdown__icon-increment">+</span></div>
-                  </div>
-                </div>
-                <div class="dropdown__menu-row dropdown__menu-row_buttons">
-                  <div class="dropdown__button-clear">
-                    <button class="buttons  buttons_link buttons_dark" type="button">ОЧИСТИТЬ</button>
-                  </div>
-                  <div class="dropdown__separator"></div>
-                  <div class="dropdown__button-submit">
-                    <button class="buttons  buttons_link" type="button">ПРИМЕНИТЬ</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="free-space" style="height:79px;"></div>
-    <section class="elements-form-elements">
-      <div class="elements-form-elements__column">
-        <div class="block-lib" style="width:266px">
-          <div class="expandable-checkbox-list check-list-test">
-            <p class="expandable-checkbox-list__title">EXPANDABLE CHECKBOX LIST</p><span class="expandable-checkbox-list__toggle-marker">expand_more</span>
-            <div class="expandable-checkbox-list__menu">
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-breakfast"><span class="field-checkbox__box"></span>Завтрак
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-table" checked><span class="field-checkbox__box"></span>Письменный стол
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-childChair" checked><span class="field-checkbox__box"></span>Стул для кормления
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-childBed" checked><span class="field-checkbox__box"></span>Кроватка
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-TV1"><span class="field-checkbox__box"></span>Телевизор
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-showerGel1"><span class="field-checkbox__box"></span>Шампунь
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-TV2"><span class="field-checkbox__box"></span>Телевизор
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-showerGel2"><span class="field-checkbox__box"></span>Шампунь
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="block-lib" style="width:266px">
-          <div class="expandable-checkbox-list check-list-test-open expandable-checkbox-list_open">
-            <p class="expandable-checkbox-list__title">EXPANDABLE CHECKBOX LIST</p><span class="expandable-checkbox-list__toggle-marker">expand_more</span>
-            <div class="expandable-checkbox-list__menu">
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-breakfast"><span class="field-checkbox__box"></span>Завтрак
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-table" checked><span class="field-checkbox__box"></span>Письменный стол
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-childChair" checked><span class="field-checkbox__box"></span>Стул для кормления
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-childBed" checked><span class="field-checkbox__box"></span>Кроватка
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-TV1"><span class="field-checkbox__box"></span>Телевизор
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-showerGel1"><span class="field-checkbox__box"></span>Шампунь
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-TV2"><span class="field-checkbox__box"></span>Телевизор
-                </label>
-              </div>
-              <div class="expandable-checkbox-list__menu-item">
-                <label class="field-checkbox">
-                  <input class="field-checkbox__input" type="checkbox" name="checkbox-showerGel2"><span class="field-checkbox__box"></span>Шампунь
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="elements-form-elements__column">
-        <div class="free-space" style="height:14px;"></div>
-        <div class="block-lib" style="width:266px">
-          <div class="rich-checkbox undefined undefined">
-            <header class="rich-checkbox__title-wrapper">
-              <h3 class="rich-checkbox__title">rich checkbox buttons</h3>
-            </header>
-            <ul class="rich-checkbox__list">
-              <li class="rich-checkbox__item">
-                <label class="field-checkbox  field-checkbox_dark-shade75 field-checkbox_bold">
-                  <input class="field-checkbox__input" type="checkbox" name="check-box"><span class="field-checkbox__box"></span>Широкий коридор
-                </label>
-                <p class="rich-checkbox__description">Ширина коридоров в номере не менее 91 см.</p>
-              </li>
-              <li class="rich-checkbox__item">
-                <label class="field-checkbox  field-checkbox_dark-shade75 field-checkbox_bold">
-                  <input class="field-checkbox__input" type="checkbox" name="check-box"><span class="field-checkbox__box"></span>Помощник для инвалидов
-                </label>
-                <p class="rich-checkbox__description">На 1 этаже вас встретит специалист  и проводит до номера.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="elements-form-elements__column">
-        <div class="free-space" style="height:14px;"></div>
-        <div class="block-lib" style="width:280px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title">BULLET LIST</h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <ul class="bullet-list undefined">
-              <li class="bullet-list__item">Нельзя с питомцами</li>
-              <li class="bullet-list__item">Без вечеринок и мероприятий</li>
-              <li class="bullet-list__item">Время прибытия — после 13:00,<br>а выезд до 12:00</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="free-space" style="height:190px;"></div>
-    <section class="elements-form-elements">
-      <div class="elements-form-elements__column">
-        <div class="block-lib" style="width:280px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title"></h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="icon-text-list">
-              <div class="icon-text"><span class="icon-text__icon">insert_emoticon</span>
-                <h3 class="icon-text__lineTitle">Комфорт</h3>
-                <p class="icon-text__description">Шумопоглощающие стены</p>
-              </div>
-              <hr class="icon-text-list__separate">
-              <div class="icon-text"><span class="icon-text__icon">location_city</span>
-                <h3 class="icon-text__lineTitle">Удобство</h3>
-                <p class="icon-text__description">Окно в каждой из спален</p>
-              </div>
-              <hr class="icon-text-list__separate">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="elements-form-elements__column">
-        <div class="free-space" style="height:7px;"></div>
-        <div class="block-lib" style="width:712px">
-          <div class="block-lib__description-row">
-            <h3 class="block-lib__title"></h3>
-            <div class="block-lib__mods"></div>
-          </div>
-          <div class="block-lib__block-row">
-            <div class="comment undefined">
-              <div class="comment__photo-ring"><img class="comment__photo" width="48px" alt="user" src="./images/avatar.png"></div>
-              <div class="comment__like-button">
-                <label class="like-button">
-                  <input class="like-button__input" type="checkbox" name="like-button" checked><span class="like-button__marker"></span>
-                  <label class="like-button__title">12</label>
-                </label>
-              </div>
-              <h3 class="comment__user-name">Мурад Сарафанов</h3>
-              <p class="comment__date">5 дней назад</p>
-              <p class="comment__text">Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  <script src="js/index.js"></script><script src="js/colors-and-types.js"></script><script src="js/form-elements.js"></script></body>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module build failed (from ./node_modules/pug-loader/index.js):
+  Error: Can't resolve '../../modules/logo/logo.pug' in 'C:\projects4\FSD-Course-II-Lev  el-Website\src\components\footer'
+  
+  - Resolver.js:209 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:209:21
+  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - UnsafeCachePlugin.js:44 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/UnsafeCachePlugin.js:44:7
+  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - DescriptionFilePlugin.js:67 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:67:43  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - DescriptionFilePlugin.js:67 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:67:43  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - DirectoryExistsPlugin.js:27 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/DirectoryExistsPlugin.js:27:15  
+  - CachedInputFileSystem.js:85 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/CachedInputFileSystem.js:85:15  
+  
+  - Error: Can't resolve '../../modules/logo/logo.pug' in 'C:\projects4\FSD-Course-II-L    evel-Website\src\components\footer'
+  
+  - Module build failed (from ./node_modules/pug-loader/index.js):
+  
+  - Error: Can't resolve '../../modules/logo/logo.pug' in 'C:\projects4\FSD-Course-II-L    evel-Website\src\components\footer'
+  
+  - Resolver.js:209 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:209:21
+  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - UnsafeCachePlugin.js:44 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/UnsafeCachePlugin.js:44:7
+  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - DescriptionFilePlugin.js:67 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:67:43  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - DescriptionFilePlugin.js:67 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/DescriptionFilePlugin.js:67:43  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+  - DirectoryExistsPlugin.js:27 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/DirectoryExistsPlugin.js:27:15  
+  - CachedInputFileSystem.js:85 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/CachedInputFileSystem.js:85:15  
+  
+  - Error: Can't resolve '../../modules/logo/logo.pug' in 'C:\projects4\FSD-Course-II-L    evel-Website\src\components\footer'
+  
+  - Module build failed (from ./node_modules/pug-loader/index.js):
+  
+  - Error: Can't resolve '../../modules/logo/logo.pug' in 'C:\projects4\FSD-Course-II-L    evel-Website\src\components\footer'
+  
+  - Resolver.js:209 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:209:21
+  
+  - Resolver.js:285 
+    [FSD-Course-II-Level-Website]/[enhanced-resolve]/lib/Resolver.js:285:5
+  
+  
+</pre><script src="js/index.js"></script><script src="js/colors-and-types.js"></script><script src="js/form-elements.js"></script><script src="js/headers-and-footers.js"></script>
