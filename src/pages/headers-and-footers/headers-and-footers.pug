@@ -26,7 +26,7 @@ block main
   section(class="" +elementsHeadersAndFooters ).elements_logo
     .elements__logo
       +logo({mods: 'gray'})
-  //- +free-space({height: '57px'})
+  +free-space({height: '57px'})
 
   section(class="" +elementsHeadersAndFooters )
     +standard-nav-bar(
@@ -34,7 +34,7 @@ block main
       itemsList: itemsList
       }
     )
-  //- +free-space({height: '40px'})
+  +free-space({height: '40px'})
 
   section(class="" +elementsHeadersAndFooters )
     +standard-nav-bar(
@@ -44,3 +44,80 @@ block main
         userName: 'Cosmin Negoita'
       }
     )
+
+  +free-space({height: '40px'})
+  section.elements
+    +footer({
+      copyright: 'Copyright © 2018 Toxin UI Kit. All rights reserved.',
+      widgets: [
+        {
+          title: 'navigation',
+          mods: 'menu',
+          itemsList: [
+            {
+              link: 'link/about',
+              item: 'About Us'
+            },
+            {
+              link: 'link/news',
+              item: 'News'
+            },
+            {
+              link: 'link/support',
+              item: 'Support'
+            },
+            {
+              link: 'link/products',
+              item: 'Products'
+            }
+          ]
+        },
+        {
+          title: 'about us',
+          mods: 'menu',
+          itemsList: [
+            {
+              link: 'link/who-we-are',
+              item: 'Who we are'
+            },
+            {
+              link: 'link/our-team',
+              item: 'Our team'
+            },
+            {
+              link: 'link/careers',
+              item: 'Careers'
+            },
+            {
+              link: 'link/investors',
+              item: 'Investors'
+            }
+          ]
+        },
+        {
+          title: 'suppurt',
+          mods: 'menu',
+          itemsList: [
+            {
+              link: 'link/documentation',
+              item: 'Documentation'
+            },
+            {
+              link: 'link/community',
+              item: 'Community'
+            },
+            {
+              link: 'link/get-in-touch',
+              item: 'Get in Touch'
+            }
+          ]
+        },
+        {
+          title: 'Subscribe to our newsletter',
+          mods: 'subscribe',
+          subscribeText: 'Receive our latest news and promotions in your inbox!'
+        }
+
+      ]})
+  section.elements
+    +footer()
